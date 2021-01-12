@@ -1,5 +1,5 @@
 import React from "react"
-//import { css } from "@emotion/react"
+import { css } from "@emotion/react"
 import { useStaticQuery, Link, graphql } from "gatsby"
 import { rhythm } from "../../../utils/typography"
 import styles from "./header.module.css"
@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <div className={styles.container}>
       <div>
-        <Link to={`/`}>
+        <Link to={`/`} style={{ textDecoration: "none" }}>
           <h3 className={styles.title}> {data.site.siteMetadata.title}</h3>
         </Link>
       </div>
