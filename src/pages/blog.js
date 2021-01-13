@@ -2,7 +2,7 @@ import React from "react"
 import { css } from "@emotion/react"
 import { Link, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
-import Layout from "../components/layout"
+import Layout from "../components/layout/layout"
 
 export default function Blog({ data }) {
   return (
