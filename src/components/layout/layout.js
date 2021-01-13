@@ -1,16 +1,16 @@
 import React from "react";
-import { css } from "@emotion/react";
 import Header from "./header/header";
+import "./style.css";
+import { css } from "@emotion/react";
 
-import { rhythm } from "../../utils/typography";
+const containerCss = css`
+  margin: 0 auto;
+  max-width: 500px;
+`;
+
 const Layout = ({ children }) => {
   return (
-    <div
-      css={css`
-        padding: ${rhythm(2)};
-        padding-top: ${rhythm(1)};
-      `}
-    >
+    <div css={containerCss}>
       <Header />
       {children}
     </div>

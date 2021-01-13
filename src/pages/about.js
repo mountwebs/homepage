@@ -1,6 +1,6 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/layout/layout"
+import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/layout/layout";
 
 export default function About({ data }) {
   return (
@@ -11,7 +11,7 @@ export default function About({ data }) {
         best photos and videos of pandas eating lots of food.
       </p>
     </Layout>
-  )
+  );
 }
 
 export const query = graphql`
@@ -22,4 +22,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
