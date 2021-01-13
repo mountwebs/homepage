@@ -1,8 +1,6 @@
-import React from "react"
-import { css } from "@emotion/react"
-import { useStaticQuery, Link, graphql } from "gatsby"
-import { rhythm } from "../../../utils/typography"
-import styles from "./header.module.css"
+import React from "react";
+import { css } from "@emotion/react";
+import { useStaticQuery, Link, graphql } from "gatsby";
 
 const Header = () => {
   const data = useStaticQuery(
@@ -15,24 +13,40 @@ const Header = () => {
         }
       }
     `
-  )
+  );
   return (
-    <div className={styles.container}>
+    <div
+      className={css`
+        display: flex;
+        color: blue;
+        width: 100%;
+        justify-content: space-between;
+      `}
+    >
       <div>
-        <Link to={`/`} className={styles.titleLink}>
+        <Link
+          to={`/`}
+          className={css`
+            text-decoration: none;
+          `}
+        >
           <h3>{data.site.siteMetadata.title}</h3>
         </Link>
       </div>
-      <div className={styles.nav}>
+      <div>
         <Link
-          className={styles.navLink}
+          css={css`
+            padding-left: 10px;
+          `}
           to={`/about/`}
           activeStyle={{ color: "red" }}
         >
           About
         </Link>
         <Link
-          className={styles.navLink}
+          css={css`
+            padding-left: 10px;
+          `}
           to={`/blog/`}
           activeStyle={{ color: "red" }}
         >
@@ -40,7 +54,7 @@ const Header = () => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

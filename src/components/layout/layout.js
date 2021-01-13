@@ -1,21 +1,9 @@
-import React from "react"
-import { css } from "@emotion/react"
-import { useStaticQuery, Link, graphql } from "gatsby"
-import Header from "./header/header"
+import React from "react";
+import { css } from "@emotion/react";
+import Header from "./header/header";
 
-import { rhythm } from "../../utils/typography"
-export default function Layout({ children }) {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `
-  )
+import { rhythm } from "../../utils/typography";
+const Layout = ({ children }) => {
   return (
     <div
       css={css`
@@ -26,5 +14,7 @@ export default function Layout({ children }) {
       <Header />
       {children}
     </div>
-  )
-}
+  );
+};
+
+export default Layout;
