@@ -7,7 +7,7 @@ import Sidebar from "./../sidebar/sidebar";
 const containerCss = css`
   margin: 0 auto;
   padding: 0 5px;
-  /* max-width: 800px; */
+  background-color: rgb(247, 247, 247);
 `;
 
 const Layout = ({ children }) => {

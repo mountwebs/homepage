@@ -4,20 +4,28 @@ import Title from "./title";
 import Nav from "./nav";
 import { rhythm } from "../../../utils/typography";
 
-const headerCss = css`
+const containerCss = css`
   width: 100%;
+  margin-bottom: ${rhythm(1)};
+`;
+
+const headerCss = css`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: ${rhythm(1)} 10px ${rhythm(1.5)} 10px;
+  padding-top: ${rhythm(1)};
+  margin: 0 15px 0 15px;
+  border-bottom: 1px solid;
 `;
 
 const Header = () => {
   return (
-    <header css={headerCss}>
-      <Title />
-      <Nav />
-    </header>
+    <div css={containerCss}>
+      <header css={headerCss}>
+        <Title />
+        <Nav />
+      </header>
+    </div>
   );
 };
 
