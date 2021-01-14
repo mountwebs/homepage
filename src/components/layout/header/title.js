@@ -2,6 +2,15 @@ import React from "react";
 import { css } from "@emotion/react";
 import { useStaticQuery, Link, graphql } from "gatsby";
 
+const titleCss = css`
+  margin-bottom: 2px;
+  color: black;
+`;
+
+const linkCss = css`
+  text-decoration: none;
+`;
+
 const Title = () => {
   const data = useStaticQuery(
     graphql`
@@ -15,16 +24,9 @@ const Title = () => {
     `
   );
   return (
-    <div>
-      <Link
-        to={`/`}
-        css={css`
-          text-decoration: none;
-        `}
-      >
-        <h3>{data.site.siteMetadata.title}</h3>
-      </Link>
-    </div>
+    <Link to={`/`} css={linkCss}>
+      <h2 css={titleCss}>{data.site.siteMetadata.title}</h2>
+    </Link>
   );
 };
 

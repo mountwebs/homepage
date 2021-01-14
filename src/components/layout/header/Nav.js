@@ -2,22 +2,31 @@ import React from "react";
 import { css } from "@emotion/react";
 import { Link } from "gatsby";
 
+// const containerCss = css`
+//   display: flex;
+//   align-items: flex-end;
+// `;
+
 const linkCss = css`
-  padding-left: 10px;
+  text-decoration: none;
+  margin-right: 10px;
+  color: black;
 `;
 
 const activeLinkCss = css`
   color: "red";
 `;
 
+// const linkText = css`align-self`;
+
 const Nav = () => {
   return (
     <div>
-      <Link css={linkCss} to={`/about/`} activeStyle={activeLinkCss}>
-        About
-      </Link>
-      <Link css={linkCss} to={`/blog/`} activeStyle={activeLinkCss}>
+      <Link css={linkCss} to={`/blog/`} activeStyle={{ color: "red" }}>
         Blog
+      </Link>
+      <Link css={linkCss} to={`/about/`} activeStyle={{ color: "red" }}>
+        About
       </Link>
     </div>
   );
