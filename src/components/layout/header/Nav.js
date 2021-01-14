@@ -11,6 +11,10 @@ const linkCss = css`
   text-decoration: none;
   margin-right: 10px;
   color: black;
+
+  @media only screen and (max-width: 425px) {
+    display: none;
+  }
 `;
 
 const activeLinkCss = css`
