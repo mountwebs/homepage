@@ -14,7 +14,7 @@ const headerCss = css`
   justify-content: space-between;
   align-items: flex-end;
   padding-top: ${rhythm(1)};
-  margin: 0 15px 0 15px;
+  margin: 0 20px;
   border-bottom: 1px solid;
 `;
 
