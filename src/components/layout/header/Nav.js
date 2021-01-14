@@ -2,11 +2,6 @@ import React from "react";
 import { css } from "@emotion/react";
 import { Link } from "gatsby";
 
-// const containerCss = css`
-//   display: flex;
-//   align-items: flex-end;
-// `;
-
 const linkCss = css`
   text-decoration: none;
   margin-right: 10px;
@@ -16,12 +11,6 @@ const linkCss = css`
     display: none;
   }
 `;
-
-const activeLinkCss = css`
-  color: "red";
-`;
-
-// const linkText = css`align-self`;
 
 const Nav = () => {
   return (

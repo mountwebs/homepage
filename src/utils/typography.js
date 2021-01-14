@@ -1,6 +1,6 @@
 import Typography from "typography";
-import kirkhamTheme from "typography-theme-kirkham";
-import grandView from "typography-theme-grand-view";
+// import kirkhamTheme from "typography-theme-kirkham";
+// import grandView from "typography-theme-grand-view";
 const typography = new Typography();
 export const { scale, rhythm, options } = typography;
 export default typography;

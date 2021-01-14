@@ -9,8 +9,7 @@ const headerCss = css`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-top: ${rhythm(1)};
-  padding-bottom: ${rhythm(1.5)};
+  padding: ${rhythm(1)} 10px ${rhythm(1.5)} 10px;
 `;
 
 const Header = () => {
