@@ -6,12 +6,13 @@ const containerCss = css`
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-top: ${rhythm(1)};
+  padding-top: ${rhythm(1.5)};
 `;
 
 const articleCss = css`
   max-width: 500px;
   text-align: center;
+  margin: 0 10px;
 `;
 
 const AboutMe = () => {
