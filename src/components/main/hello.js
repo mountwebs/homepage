@@ -33,7 +33,7 @@ const h1Css = css`
 
 const Hello = () => {
   return (
-    <div css={helloCss}>
+    <div css={helloCss} id="hello">
       <img src={selfie} css={imageCss} alt="Stian Klasbu" />
       <div css={textContainerCss}>
         <h1 css={h1Css}>

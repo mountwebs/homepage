@@ -1,6 +1,7 @@
 import React from "react";
 import { css } from "@emotion/react";
 import { useStaticQuery, Link, graphql } from "gatsby";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const titleCss = css`
   margin-bottom: 2px;
@@ -24,9 +25,9 @@ const Title = () => {
     `
   );
   return (
-    <Link to={`/`} css={linkCss}>
+    <AnchorLink css={linkCss} to="/#hello">
       <h2 css={titleCss}>{data.site.siteMetadata.title}</h2>
-    </Link>
+    </AnchorLink>
   );
 };
 
