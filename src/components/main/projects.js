@@ -41,7 +41,9 @@ const Projects = () => {
             The page you are on. Created with Gatsby. The blog uses markdown
             files via graphql.
           </p>
-          <p>https://github.com/mountwebs/homepage</p>
+          <p>
+            <a href="https://github.com/mountwebs/homepage">Github</a>
+          </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
