@@ -1,48 +1,41 @@
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
 import { css } from "@emotion/react";
-import { Link } from "gatsby";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import "./sidebar.css";
 
-const linkCss = css`
-  text-decoration: none;
-  margin-right: 10px;
-  color: black;
-
-  @media only screen and (max-width: 425px) {
-    display: none;
-  }
+const listCss = css`
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 `;
 
-class Sidebar extends React.Component {
-  showSettings(event) {
-    event.preventDefault();
-  }
+const navLinkCss = css`
+  color: white;
+`;
 
-  render() {
-    return (
-      <Menu right>
-        <Link css={linkCss} to={`/blog/`} activeStyle={{ color: "red" }}>
-          Blog
-        </Link>
-        <Link css={linkCss} to={`/about/`} activeStyle={{ color: "red" }}>
-          About
-        </Link>
-        {/* <a id="home" className="menu-item" href="/">
-          Home
-        </a>
-        <a id="about" className="menu-item" href="/about">
-          About
-        </a>
-        <a id="contact" className="menu-item" href="/contact">
-          Contact
-        </a>
-        <a onClick={this.showSettings} className="menu-item--small" href="">
-          Settings
-        </a> */}
-      </Menu>
-    );
-  }
-}
+const Sidebar = () => {
+  return (
+    <Menu right>
+      <ul css={listCss}>
+        <li>
+          <AnchorLink css={navLinkCss} to="/#aboutMe">
+            about
+          </AnchorLink>
+        </li>
+        <li>
+          <AnchorLink css={navLinkCss} to="/#projects">
+            projects
+          </AnchorLink>
+        </li>
+        <li>
+          <AnchorLink css={navLinkCss} to={`/blog/`}>
+            blog
+          </AnchorLink>
+        </li>
+      </ul>
+    </Menu>
+  );
+};
 
 export default Sidebar;
