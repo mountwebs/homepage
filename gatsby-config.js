@@ -11,6 +11,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    `gatsby-plugin-anchor-links`,
     `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-typography`,

@@ -18,7 +18,7 @@ const articleCss = css`
 const AboutMe = () => {
   return (
     <div css={containerCss}>
-      <article css={articleCss}>
+      <article css={articleCss} id="aboutMe">
         <h2>About me</h2>
         <p>
           Praesent elementum facilisis leo vel fringilla est ullamcorper. Ut

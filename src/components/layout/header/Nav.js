@@ -1,6 +1,7 @@
 import React from "react";
 import { css } from "@emotion/react";
 import { Link } from "gatsby";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const linkCss = css`
   text-decoration: none;
@@ -15,11 +16,14 @@ const linkCss = css`
 const Nav = () => {
   return (
     <div>
+      <AnchorLink css={linkCss} to="/#aboutMe">
+        about
+      </AnchorLink>
+      <AnchorLink css={linkCss} to="/#projects">
+        projects
+      </AnchorLink>
       <Link css={linkCss} to={`/blog/`} activeStyle={{ color: "red" }}>
-        Blog
-      </Link>
-      <Link css={linkCss} to={`/about/`} activeStyle={{ color: "red" }}>
-        About
+        blog
       </Link>
     </div>
   );

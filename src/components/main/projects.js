@@ -15,7 +15,7 @@ const titleContainer = css`
 
 const Projects = () => {
   return (
-    <div>
+    <div id="projects">
       <div css={titleContainer}>
         {" "}
         <h2>Projects</h2>
