@@ -7,6 +7,9 @@ import { rhythm } from "../../../utils/typography";
 const containerCss = css`
   width: 100%;
   margin-bottom: ${rhythm(1)};
+  background-color: rgb(247, 247, 247);
+  position: fixed;
+  z-index: 100;
 `;
 
 const headerCss = css`

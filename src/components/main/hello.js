@@ -9,6 +9,7 @@ const helloCss = css`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: ${rhythm(2.5)};
 `;
 
 const imageCss = css`

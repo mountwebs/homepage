@@ -10,8 +10,13 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -100,
+      },
+    },
     `gatsby-transformer-remark`,
-    `gatsby-plugin-anchor-links`,
     `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-typography`,
