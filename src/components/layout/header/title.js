@@ -1,6 +1,6 @@
 import React from "react";
 import { css } from "@emotion/react";
-import { useStaticQuery, Link, graphql } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const titleCss = css`
