@@ -21,20 +21,25 @@ const AboutMe = () => {
       <article css={articleCss} id="aboutMe">
         <h2>About me</h2>
         <p>
-          Praesent elementum facilisis leo vel fringilla est ullamcorper. Ut
-          porttitor leo a diam sollicitudin. Fringilla est ullamcorper eget
-          nulla facilisi etiam dignissim diam. In metus vulputate eu scelerisque
-          felis imperdiet proin fermentum leo. Platea dictumst quisque sagittis
-          purus sit amet volutpat consequat. Magna eget est lorem ipsum dolor
-          sit. Auctor elit sed vulputate mi sit amet mauris commodo quis.
-          Volutpat diam ut venenatis tellus. Nibh ipsum consequat nisl vel
-          pretium lectus quam id leo. Turpis massa sed elementum tempus egestas
-          sed sed risus. Elementum nisi quis eleifend quam.
+          I am a 32 year old developer based in Oslo, with a passion for
+          creating and writing about technology.
         </p>
         <p>
-          Eu consequat ac felis donec et odio. At risus viverra adipiscing at in
-          tellus integer feugiat scelerisque. Amet venenatis urna cursus eget
-          nunc. Sit amet risus nullam eget felis eget nunc.
+          Last year I finished my master thesis in Science and technology
+          studies with a top grade. I have always had coding and tech-tinkering
+          as a interest and hobby, and after thinking and writing about tech in
+          more abstract terms, I decided to take a big step and turn a passion
+          into a new career path and becoming a full-stack web developer. I have
+          recently finished an accelerated career program at{" "}
+          <a href="https://salt.dev/">
+            School of applied technology {"<"}/salt{">"}
+          </a>
+          , and I am now employed at Salt as a consultant.
+        </p>
+        <p>
+          In my spare time I love to create things - whether that is to create
+          an IoT solution for my smart home, create a song with my jazz band,
+          create generative art with code, or create an app.
         </p>
       </article>
     </div>
