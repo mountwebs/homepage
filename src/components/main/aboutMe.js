@@ -38,7 +38,7 @@ const AboutMe = () => {
         </p>
         <p>
           In my spare time I love to create things - whether that is to create
-          an IoT solution for my smart home, create a song with my jazz band,
+          an IoT solution for my smart home, create som music with my friends,
           create generative art with code, or create an app.
         </p>
       </article>
