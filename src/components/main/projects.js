@@ -1,6 +1,6 @@
 import React from "react";
 import { css } from "@emotion/react";
-import { FaReact, FaPython } from "react-icons/fa";
+import { FaReact, FaPython, FaGraduationCap } from "react-icons/fa";
 import { GrGatsbyjs } from "react-icons/gr";
 import { MdWeb } from "react-icons/md";
 import { rhythm } from "../../utils/typography";
@@ -49,7 +49,7 @@ const Projects = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="December 2020"
+          date="December 2021"
           iconStyle={{
             background: "rgb(247, 247, 247)",
             color: "black",
@@ -70,18 +70,19 @@ const Projects = () => {
             scheduling exercises etc.) Created with my mob at Salt at a 2-week
             sprint.
           </p>
-          <a href="https://github.com/MaciejGL/final-project-frontend">
-            Frontend
-          </a>
-          <br />
-          <a href="https://github.com/MaciejGL/final-project-backend">
-            Backend
-          </a>
-          <br />
+          <p>
+            <a href="https://github.com/MaciejGL/final-project-frontend">
+              Frontend
+            </a>
+            <br />
+            <a href="https://github.com/MaciejGL/final-project-backend">
+              Backend
+            </a>
+          </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="November 2020"
+          date="November 2021"
           iconStyle={{
             background: "rgb(247, 247, 247)",
             color: "rgb(95, 212, 247)",
@@ -105,10 +106,43 @@ const Projects = () => {
             Inially made on a one day sprint and was a part of the Salt bootcamp
             in Stockholm fall 2020. It is now upgraded with Redux and Mongoose.
           </p>
-          <a href="https://github.com/mountwebs/blomstre-planttracker">
-            Github
-          </a>
-          <br />
+
+          <p>
+            <a href="https://github.com/mountwebs/blomstre-planttracker">
+              Github
+            </a>
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="June 2021"
+          iconStyle={{
+            background: "rgb(247, 247, 247)",
+            color: "black",
+          }}
+          icon={<FaGraduationCap />}
+        >
+          <h3 className="vertical-timeline-element-title">Master thesis</h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            'Good privacy': Privacy by design - from political vision to
+            IT-practice
+          </h4>
+          <p>
+            My thesis was about privacy and I wrote about GDPR, EUs privacy law,
+            and how that law was translated into practice and met by and
+            implemented by developers. It was written in the academic field of
+            Science and technology studies.
+          </p>
+          <p>
+            <a href="https://www.sv.uio.no/tik/english/">
+              Centre for Technology, Innovation and Culture, University of Oslo
+            </a>
+          </p>
+          <p>
+            <a href="https://www.duo.uio.no/handle/10852/80171">
+              Thesis (in Norwegian)
+            </a>
+          </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -128,8 +162,9 @@ const Projects = () => {
             exact time in minutes and seconds, it visually represents time with
             a minimalistic hour glass icon in the menu bar.
           </p>
-          <a href="https://github.com/mountwebs/timeglass">Github</a>
-          <br />
+          <p>
+            <a href="https://github.com/mountwebs/timeglass">Github</a>
+          </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
