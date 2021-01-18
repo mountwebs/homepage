@@ -3,6 +3,7 @@ import { css } from "@emotion/react";
 import { FaReact, FaPython } from "react-icons/fa";
 import { GrGatsbyjs } from "react-icons/gr";
 import { MdWeb } from "react-icons/md";
+import { rhythm } from "../../utils/typography";
 
 import {
   VerticalTimeline,
@@ -13,6 +14,7 @@ import "react-vertical-timeline-component/style.min.css";
 const titleContainer = css`
   width: 100%;
   text-align: center;
+  margin-top: ${rhythm(0.5)};
 `;
 
 const Projects = () => {
@@ -38,8 +40,8 @@ const Projects = () => {
             Portfolio and blog
           </h4>
           <p>
-            The page you are on. Created with Gatsby. The blog uses markdown
-            files via graphql.
+            The page you are on. Created with Gatsby (with React and GraphQL).
+            The blog uses markdown files via graphql.
           </p>
           <p>
             <a href="https://github.com/mountwebs/homepage">Github</a>
