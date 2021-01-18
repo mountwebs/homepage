@@ -2,8 +2,10 @@ import React from "react";
 import { css } from "@emotion/react";
 import { FaReact, FaPython, FaGraduationCap } from "react-icons/fa";
 import { GrGatsbyjs } from "react-icons/gr";
+import { SiArduino } from "react-icons/si";
 import { MdWeb } from "react-icons/md";
 import { rhythm } from "../../utils/typography";
+import drawingMachine from "../../assets/images/drawing_machine.jpg";
 
 import {
   VerticalTimeline,
@@ -31,7 +33,7 @@ const Projects = () => {
           date="January 2021"
           iconStyle={{
             background: "rgb(247, 247, 247)",
-            color: "rgb(90,48,139)",
+            // color: "rgb(90,48,139)",
           }}
           icon={<GrGatsbyjs />}
         >
@@ -52,7 +54,6 @@ const Projects = () => {
           date="December 2021"
           iconStyle={{
             background: "rgb(247, 247, 247)",
-            color: "black",
           }}
           icon={<MdWeb />}
         >
@@ -85,7 +86,7 @@ const Projects = () => {
           date="November 2021"
           iconStyle={{
             background: "rgb(247, 247, 247)",
-            color: "rgb(95, 212, 247)",
+            // color: "rgb(95, 212, 247)",
           }}
           icon={<FaReact />}
         >
@@ -112,6 +113,57 @@ const Projects = () => {
               Github
             </a>
           </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="July 2021"
+          iconStyle={{
+            background: "rgb(247, 247, 247)",
+            color: "black",
+          }}
+          icon={<SiArduino />}
+        >
+          <h3 className="vertical-timeline-element-title">Drawing machine</h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            3d printed 2d machine.
+          </h4>
+          <article
+            css={css`
+              display: flex;
+              @media only screen and (max-width: 425px) {
+                flex-wrap: wrap;
+              }
+            `}
+          >
+            <div
+              css={css`
+                min-width: 120px;
+              `}
+            >
+              <p>
+                A homemade drawing machine with 3d printed parts. Powerd by
+                arduino.
+              </p>
+              <p>
+                Read more about it and see examples of what it can make{" "}
+                <a href="/blog">in this not yet existing blog post</a>.
+              </p>
+            </div>
+            <div
+              css={css`
+                max-width: 200px;
+                margin-top: 1em;
+                margin-left: 10px;
+              `}
+            >
+              <img
+                src={drawingMachine}
+                css={css`
+                  border-radius: 10px;
+                `}
+              />
+            </div>
+          </article>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
