@@ -7,32 +7,27 @@ import { VscGithub } from "react-icons/vsc";
 
 const containerCss = css`
   display: flex;
-`;
-
-const navCss = css`
-  // line-height: 29px;
-`;
-
-const linkCss = css`
-  text-decoration: none;
-  margin-left: 10px;
-  color: black;
 
   @media only screen and (max-width: 425px) {
     display: none;
   }
 `;
 
-const iconContainerCss = css`
+const linkCss = css`
+  text-decoration: none;
   margin-left: 10px;
+  color: black;
+`;
+
+const iconContainerCss = css`
+  margin-left: 20px;
   display: flex;
-  align-icons: flex-end;
 `;
 
 const Nav = () => {
   return (
     <div css={containerCss}>
-      <div css={navCss}>
+      <div style={{ display: "flex", alignItems: "flex-end" }}>
         <AnchorLink css={linkCss} to="/#aboutMe">
           about
         </AnchorLink>
@@ -48,19 +43,22 @@ const Nav = () => {
           href="https://www.linkedin.com/in/stian-klasbu-917a40162/"
           style={{ color: "inherit", display: "flex", alignItems: "flex-end" }}
         >
-          {" "}
           <AiOutlineLinkedin style={{ height: 24, width: 24 }} />
         </a>
 
         <a
           href="https://github.com/mountwebs"
-          style={{ color: "inherit", display: "flex", alignItems: "flex-end" }}
+          style={{
+            color: "inherit",
+            display: "flex",
+            alignItems: "flex-end",
+          }}
         >
           <VscGithub
             style={{
               height: 23,
               width: 23,
-              padding: "0px 0 2px",
+              paddingBottom: "2px",
               marginLeft: 2,
             }}
           />
