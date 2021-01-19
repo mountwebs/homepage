@@ -1,6 +1,6 @@
 import React from "react";
 import { css } from "@emotion/react";
-import selfie from "./121010987_751965865386817_7712053262209936402_n.jpg";
+import selfie from "../../assets/images/selfie.jpg";
 import { rhythm } from "../../utils/typography";
 
 const helloCss = css`
@@ -9,7 +9,6 @@ const helloCss = css`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: ${rhythm(2.5)};
 `;
 
 const imageCss = css`

@@ -6,6 +6,8 @@ import { SiArduino } from "react-icons/si";
 import { MdWeb } from "react-icons/md";
 import { rhythm } from "../../utils/typography";
 import drawingMachine from "../../assets/images/drawing_machine.jpg";
+import blomstreScreen from "../../assets/images/blomstre_screen.jpg";
+import timeglass from "../../assets/images/menu_bar2.png";
 
 import {
   VerticalTimeline,
@@ -51,7 +53,7 @@ const Projects = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="December 2021"
+          date="December 2020"
           iconStyle={{
             background: "rgb(247, 247, 247)",
           }}
@@ -83,7 +85,7 @@ const Projects = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="November 2021"
+          date="November 2020"
           iconStyle={{
             background: "rgb(247, 247, 247)",
             // color: "rgb(95, 212, 247)",
@@ -94,6 +96,14 @@ const Projects = () => {
           <h4 className="vertical-timeline-element-subtitle">
             Full-stack prototype web application
           </h4>
+          <img
+            src={blomstreScreen}
+            css={css`
+              margin: ${rhythm(1)} 10px 0 0;
+              border-radius: 10px;
+            `}
+            alt="Screenshot of blomstre-app"
+          />
           <p>
             Frontend: React & Redux
             <br />
@@ -116,7 +126,7 @@ const Projects = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="July 2021"
+          date="July 2020"
           iconStyle={{
             background: "rgb(247, 247, 247)",
             color: "black",
@@ -127,47 +137,31 @@ const Projects = () => {
           <h4 className="vertical-timeline-element-subtitle">
             3d printed 2d machine.
           </h4>
-          <article
+          <div
             css={css`
-              display: flex;
-              @media only screen and (max-width: 425px) {
-                flex-wrap: wrap;
-              }
+              margin-top: ${rhythm(1)};
+              max-width: 300px;
             `}
           >
-            <div
+            <img
+              src={drawingMachine}
               css={css`
-                min-width: 120px;
+                border-radius: 10px;
               `}
-            >
-              <p>
-                A homemade drawing machine with 3d printed parts. Powerd by
-                arduino.
-              </p>
-              <p>
-                Read more about it and see examples of what it can make{" "}
-                <a href="/blog">in this not yet existing blog post</a>.
-              </p>
-            </div>
-            <div
-              css={css`
-                max-width: 200px;
-                margin-top: 1em;
-                margin-left: 10px;
-              `}
-            >
-              <img
-                src={drawingMachine}
-                css={css`
-                  border-radius: 10px;
-                `}
-              />
-            </div>
-          </article>
+            />
+          </div>
+
+          <p>
+            A homemade drawing machine with 3d printed parts. Powerd by arduino.
+          </p>
+          <p>
+            Read more about it and see examples of what it can make{" "}
+            <a href="/blog">in this not yet existing blog post</a>.
+          </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="June 2021"
+          date="June 2020"
           iconStyle={{
             background: "rgb(247, 247, 247)",
             color: "black",
@@ -198,7 +192,7 @@ const Projects = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="May 2021"
+          date="May 2020"
           iconStyle={{
             background: "rgb(247, 247, 247)",
             color: "black",
@@ -209,10 +203,18 @@ const Projects = () => {
           <h4 className="vertical-timeline-element-subtitle">
             Mac-os status bar app.
           </h4>
+          <img
+            src={timeglass}
+            css={css`
+              border-radius: 5px;
+              margin: ${rhythm(1)} 10px 0 0;
+            `}
+          />
           <p>
-            A simple, unobtrusive menu bar timer for macOS. Rather than showing
-            exact time in minutes and seconds, it visually represents time with
-            a minimalistic hour glass icon in the menu bar.
+            A simple, unobtrusive menu bar timer for macOS. Most timers show
+            exact time in minutes and seconds, which can be distracting when
+            focusing. This timer replaces that distractive element with a
+            minimalistic hour glass animation in the menu bar.
           </p>
           <p>
             <a href="https://github.com/mountwebs/timeglass">Github</a>

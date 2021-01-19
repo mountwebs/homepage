@@ -11,20 +11,20 @@ const containerCss = css`
 `;
 
 const mainCss = css`
-  max-width: 800px;
-  margin: 0 20px;
-  padding: ${rhythm(3)} 0;
+  max-width: 650px;
+  padding: ${rhythm(1)};
 `;
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark;
+  console.log(data);
   return (
     <Layout>
       <div css={containerCss}>
         <main css={mainCss}>
-          {" "}
           <h1>{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <p style={{ color: "#888" }}>Written {post.frontmatter.date}.</p>
         </main>
       </div>
     </Layout>
@@ -37,6 +37,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date(formatString: "DD. MM. YYYY")
       }
     }
   }

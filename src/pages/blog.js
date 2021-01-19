@@ -11,9 +11,9 @@ const containerCss = css`
 `;
 
 const mainCss = css`
-  max-width: 800px;
+  max-width: 650px;
   margin: 0 20px;
-  padding: ${rhythm(3)} 0;
+  padding: ${rhythm(1)} 0;
 `;
 
 export default function Blog({ data }) {
@@ -24,6 +24,7 @@ export default function Blog({ data }) {
           <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <div key={node.id}>
+              {console.log(node)}
               <Link
                 to={node.fields.slug}
                 css={css`
@@ -75,7 +76,7 @@ export const query = graphql`
           id
           frontmatter {
             title
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "DD. MM. YYYY")
           }
           fields {
             slug
