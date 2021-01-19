@@ -6,6 +6,8 @@ import { SiArduino } from "react-icons/si";
 import { MdWeb } from "react-icons/md";
 import { RiArticleLine } from "react-icons/ri";
 import { rhythm } from "../../utils/typography";
+
+import PhysIOCarousel from "./physIOCarousel";
 import drawingMachine from "../../assets/images/drawing_machine.jpg";
 import blomstreScreen from "../../assets/images/blomstre_screen.jpg";
 import timeglass from "../../assets/images/menu_bar2.png";
@@ -37,7 +39,6 @@ const Projects = () => {
           date="January 2021"
           iconStyle={{
             background: "rgb(247, 247, 247)",
-            // color: "rgb(90,48,139)",
           }}
           icon={<GrGatsbyjs />}
         >
@@ -46,8 +47,8 @@ const Projects = () => {
             Portfolio and blog
           </h4>
           <p>
-            The page you are on. Created with Gatsby (with React and GraphQL).
-            The blog uses markdown files via graphql.
+            The page you are on. It is created with Gatsby (with React and
+            GraphQL). The blog uses markdown files via graphql.
           </p>
           <p>
             <a href="https://github.com/mountwebs/homepage">Github</a>
@@ -65,6 +66,13 @@ const Projects = () => {
           <h4 className="vertical-timeline-element-subtitle">
             Prototype full-stack web application
           </h4>
+          <div
+            css={css`
+              height: 200px;
+            `}
+          >
+            <PhysIOCarousel />
+          </div>
           <p>
             Frontend: React & Redux
             <br />
