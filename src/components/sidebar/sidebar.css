@@ -80,7 +80,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   color: #ffffff;
 }
 
-@media only screen and (min-width: 426px) {
+@media only screen and (min-width: 471px) {
   .bm-burger-button {
     display: none;
   }

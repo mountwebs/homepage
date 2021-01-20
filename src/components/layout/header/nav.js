@@ -8,7 +8,7 @@ import { VscGithub } from "react-icons/vsc";
 const containerCss = css`
   display: flex;
 
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 470px) {
     display: none;
   }
 `;
@@ -30,6 +30,9 @@ const Nav = () => {
       <div style={{ display: "flex", alignItems: "flex-end" }}>
         <AnchorLink css={linkCss} to="/#aboutMe">
           about
+        </AnchorLink>
+        <AnchorLink css={linkCss} to="/#tech-stack">
+          stack
         </AnchorLink>
         <AnchorLink css={linkCss} to="/#projects">
           projects

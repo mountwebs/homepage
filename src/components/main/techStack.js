@@ -1,5 +1,6 @@
 import React from "react";
 import { rhythm } from "../../utils/typography";
+import Title from "../common/title";
 
 import Chip from "@material-ui/core/Chip";
 import {
@@ -37,14 +38,6 @@ import { GrMysql } from "react-icons/gr";
 import { css } from "@emotion/react";
 
 export default function Chips() {
-  const handleDelete = () => {
-    console.info("You clicked the delete icon.");
-  };
-
-  const handleClick = () => {
-    console.info("You clicked the Chip.");
-  };
-
   const skills = [
     {
       type: "Languages",
@@ -159,20 +152,7 @@ export default function Chips() {
         padding-top: ${rhythm(1.5)};
       `}
     >
-      <div
-        css={css`
-          display: flex;
-          justify-content: center;
-        `}
-      >
-        <h2
-          css={css`
-            margin-bottom: ${rhythm(0.5)};
-          `}
-        >
-          Tech stack
-        </h2>
-      </div>
+      <Title marginBottom={0.5}>Tech stack</Title>
       <div
         css={css`
           display: flex;

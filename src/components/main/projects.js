@@ -7,6 +7,7 @@ import { MdWeb } from "react-icons/md";
 import { RiArticleLine } from "react-icons/ri";
 import { rhythm } from "../../utils/typography";
 import PhysIOCarousel from "./physIOCarousel";
+import Title from "../common/title";
 
 import drawingMachine from "../../assets/images/drawing_machine.jpg";
 import blomstreScreen from "../../assets/images/blomstre_screen.jpg";
@@ -27,12 +28,13 @@ const titleContainer = css`
 
 const Projects = () => {
   return (
-    <div id="projects">
-      <div css={titleContainer}>
-        {" "}
-        <h2>Projects</h2>
-      </div>
-
+    <div
+      css={css`
+        margin-top: ${rhythm(1)};
+      `}
+      id="projects"
+    >
+      <Title marginBottom={0.5}>Projects</Title>
       <VerticalTimeline animate={false}>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"

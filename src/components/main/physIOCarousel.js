@@ -52,8 +52,8 @@ const contentArray = [
   },
   { path: "login.png", alt: "Login", text: "Login" },
   { path: "about.png", alt: "About page", text: "About page" },
-  { path: "homepage.png", alt: "Homepage", text: "Home" },
-  { path: "signup.png", alt: "Signup", text: "Signup" },
+  // { path: "homepage.png", alt: "Homepage", text: "Home" },
+  // { path: "signup.png", alt: "Signup", text: "Signup" },
 ];
 
 const content = contentArray.map(item => (
