@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 function importAll(r) {
   let images = {};
-  r.keys().map((item, index) => {
+  r.keys().forEach((item, index) => {
     images[item.replace("./", "")] = r(item);
   });
   return images;
@@ -24,19 +24,52 @@ const imageCss = css`
 `;
 
 const contentArray = [
-  ["about.png"],
-  ["client-dashboard.png"],
-  ["client-session.png"],
-  ["homepage.png"],
-  ["login.png"],
-  ["pro-client.png"],
-  ["pro-createsession"],
-  ["signup.png"],
+  {
+    path: "pro-dashboard.png",
+    alt: "Pro Dashboard",
+    text: "Dashboard for physiotherapist",
+  },
+  {
+    path: "pro-client.png",
+    alt: "Pro - client page",
+    text: "Client page for physiotherapist",
+  },
+  {
+    path: "pro-createsession.png",
+    alt: "Pro - create session",
+    text: "Create session page for physiotherapist",
+  },
+
+  {
+    path: "client-dashboard.png",
+    alt: "Client dashboard",
+    text: "Dashboard for client",
+  },
+  {
+    path: "client-session.png",
+    alt: "Client session",
+    text: "Session for client",
+  },
+  { path: "login.png", alt: "Login", text: "Login" },
+  { path: "about.png", alt: "About page", text: "About page" },
+  { path: "homepage.png", alt: "Homepage", text: "Home" },
+  { path: "signup.png", alt: "Signup", text: "Signup" },
 ];
 
 const content = contentArray.map(item => (
   <div>
-    <img css={imageCss} src={images[item[0]]} />
+    <img css={imageCss} src={images[item.path]} alt={item.alt} />
+    {"text" in item && (
+      <div
+        css={css`
+          padding-top: 10px;
+          display: flex;
+          justify-content: center;
+        `}
+      >
+        <span>{item.text}</span>
+      </div>
+    )}
   </div>
 ));
 
@@ -48,6 +81,7 @@ const PhysIOCarousel = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
+    adaptiveHeight: true,
   };
 
   console.log(content);
@@ -69,63 +103,5 @@ const PhysIOCarousel = () => {
     </Slider>
   );
 };
-
-{
-  /* <div>
-<div
-  css={css`
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin-top: 5px;
-    padding-top: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  `}
->
-  <div
-    css={css`
-      padding: 0 5px;
-      border-radius: 5px;
-      background: rgba(0, 0, 0, 0.3);
-    `}
-  >
-    Text
-  </div>
-</div>
-<img css={imageCss} src={images["about.png"]} />
-</div>
-<div>
-<img css={imageCss} src={images["client-dashboard.png"]} />
-<div
-  css={css`
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
-  `}
->
-  <span>Testing dette....</span>
-</div>
-</div>
-<div>
-<img css={imageCss} src={images["client-session.png"]} />
-</div>
-<div>
-<img css={imageCss} src={images["login.png"]} />
-</div>
-<div>
-<img css={imageCss} src={images["pro-client.png"]} />
-</div>
-<div>
-<img css={imageCss} src={images["pro-createsession.png"]} />
-</div>
-<div>
-<img css={imageCss} src={images["pro-dashboard.png"]} />
-</div>
-<div>
-<img css={imageCss} src={images["signup.png"]} />
-</div> */
-}
 
 export default PhysIOCarousel;

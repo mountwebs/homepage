@@ -66,13 +66,13 @@ const Projects = () => {
           <h4 className="vertical-timeline-element-subtitle">
             Prototype full-stack web application
           </h4>
-          {/* <div
+          <div
             css={css`
               margin: 10px 0 30px;
             `}
-          > */}
-          <PhysIOCarousel />
-          {/* </div> */}
+          >
+            <PhysIOCarousel />
+          </div>
           <p>
             Frontend: React & Redux
             <br />
