@@ -22,7 +22,7 @@ import "react-vertical-timeline-component/style.min.css";
 const titleContainer = css`
   width: 100%;
   text-align: center;
-  margin-top: ${rhythm(0.5)};
+  margin-top: ${rhythm(1)};
 `;
 
 const Projects = () => {

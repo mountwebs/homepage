@@ -3,7 +3,6 @@ import { css } from "@emotion/react";
 import { rhythm } from "../../utils/typography";
 
 const containerCss = css`
-  width: 100%;
   display: flex;
   justify-content: center;
   padding-top: ${rhythm(1.5)};
@@ -12,7 +11,7 @@ const containerCss = css`
 const articleCss = css`
   max-width: 500px;
   text-align: center;
-  margin: 0 10px;
+  margin: 0 20px;
 `;
 
 const AboutMe = () => {
@@ -21,8 +20,8 @@ const AboutMe = () => {
       <article css={articleCss} id="aboutMe">
         <h2>About me</h2>
         <p>
-          I am a 32 year old developer based in Oslo, with a passion for
-          creating and writing about technology.
+          I am a full-stack developer based in Oslo, with a passion for creating
+          and writing about technology.
         </p>
         <p>
           Last year I finished my master thesis in Science and technology
@@ -36,11 +35,9 @@ const AboutMe = () => {
           </a>
           , and I am now employed at Salt as a consultant.
         </p>
-        <p>
-          In my spare time I love to create things - whether that is to create
-          an IoT solution for my smart home, create music with some friends,
-          create generative art with code, or create an app.
-        </p>
+        In my spare time I love to create things - whether that is to create an
+        IoT solution for my smart home, create music with some friends, create
+        generative art with code, or create an app.
       </article>
     </div>
   );

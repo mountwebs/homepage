@@ -1,20 +1,40 @@
 import React from "react";
-import Avatar from "@material-ui/core/Avatar";
+import { rhythm } from "../../utils/typography";
+
 import Chip from "@material-ui/core/Chip";
-import FaceIcon from "@material-ui/icons/Face";
-import DoneIcon from "@material-ui/icons/Done";
-import { FaReact, FaPython, FaGraduationCap } from "react-icons/fa";
+import {
+  FaReact,
+  FaPython,
+  FaSass,
+  FaBootstrap,
+  FaNodeJs,
+} from "react-icons/fa";
+import { IoLogoJavascript, IoLogoCss3 } from "react-icons/io5";
+import { AiFillHtml5 } from "react-icons/ai";
+import {
+  SiRedux,
+  SiWebpack,
+  SiGatsby,
+  SiMongodb,
+  SiPostgresql,
+  SiGraphql,
+  SiInfluxdb,
+  SiJest,
+  SiEslint,
+  SiLinux,
+  SiGit,
+  SiDocker,
+  SiGnubash,
+  SiPostman,
+  SiHeroku,
+  SiArduino,
+  SiAmazonaws,
+  SiRaspberrypi,
+  SiNetlify,
+} from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
+
 import { css } from "@emotion/react";
-
-const containerCss = css`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-`;
-
-const techTypeDivCss = css``;
 
 export default function Chips() {
   const handleDelete = () => {
@@ -26,81 +46,147 @@ export default function Chips() {
   };
 
   const skills = [
-    { type: "Front-end", chips: [{ label: "React", icon: <FaReact /> }] },
+    {
+      type: "Languages",
+      chips: [
+        { label: "JavaScript", icon: <IoLogoJavascript /> },
+        { label: "Python", icon: <FaPython /> },
+      ],
+    },
+    {
+      type: "Front-end",
+      chips: [
+        { label: "React", icon: <FaReact /> },
+        { label: "Gatsby", icon: <SiGatsby /> },
+        { label: "Redux", icon: <SiRedux /> },
+        { label: "Html 5", icon: <AiFillHtml5 /> },
+        { label: "css 3", icon: <IoLogoCss3 /> },
+        { label: "Sass", icon: <FaSass /> },
+        { label: "Webpack", icon: <SiWebpack /> },
+      ],
+    },
+    {
+      type: "Back-end",
+      chips: [
+        { label: "Node", icon: <FaNodeJs /> },
+        { label: "Express" },
+        { label: "MongoDB", icon: <SiMongodb /> },
+        { label: "PostgreSQL", icon: <SiPostgresql /> },
+        { label: "InfluxDB", icon: <SiInfluxdb /> },
+        { label: "MySQL", icon: <GrMysql /> },
+        { label: "GraphQL", icon: <SiGraphql /> },
+        { label: "Bootstrap", icon: <FaBootstrap /> },
+      ],
+    },
+    {
+      type: "Testing",
+      chips: [
+        { label: "EsLint", icon: <SiEslint /> },
+        { label: "Jest", icon: <SiJest /> },
+        { label: "Mocha" },
+      ],
+    },
+    {
+      type: "Micro electronics",
+      chips: [
+        { label: "Arduino", icon: <SiArduino /> },
+        { label: "Raspberry pi", icon: <SiRaspberrypi /> },
+      ],
+    },
+    {
+      type: "Deployment",
+      chips: [
+        { label: "Heroku", icon: <SiHeroku /> },
+        { label: "Amazon AWS", icon: <SiAmazonaws /> },
+        { label: "Netlify", icon: <SiNetlify /> },
+      ],
+    },
+    {
+      type: "Other",
+      chips: [
+        { label: "Linux", icon: <SiLinux /> },
+        { label: "Git", icon: <SiGit /> },
+        { label: "Docker", icon: <SiDocker /> },
+        { label: "Bash", icon: <SiGnubash /> },
+        { label: "Postman", icon: <SiPostman /> },
+      ],
+    },
   ];
 
   const skillTableContent = skills.map(item => (
-    <div>
-      <div>
-        <h4>{item.type}</h4>
+    <div
+      css={css`
+        display: flex;
+        margin: ${rhythm(0.5)} 0;
+        align-items: center;
+      `}
+    >
+      <div css={css``}>
+        <h4
+          css={css`
+            width: 100px;
+            margin-bottom: 0;
+          `}
+        >
+          {item.type}
+        </h4>
       </div>
-      <div>
+      <div
+        css={css`
+          display: flex;
+          flex-wrap: wrap;
+          max-width: 400px;
+        `}
+      >
         {item.chips.map(chip => (
-          <Chip size="small" label={chip.label} avatar={chip.icon} />
+          <Chip
+            size="small"
+            label={chip.label}
+            avatar={chip.icon}
+            css={css`
+              margin: 2px;
+            `}
+          />
         ))}
       </div>
     </div>
   ));
 
   return (
-    <div css={containerCss}>
-      <div>
-        <h3>Tech stack</h3>
+    <div
+      css={css`
+        margin: 0 20px;
+        padding-top: ${rhythm(1.5)};
+      `}
+    >
+      <div
+        css={css`
+          display: flex;
+          justify-content: center;
+        `}
+      >
+        <h2
+          css={css`
+            margin-bottom: ${rhythm(0.5)};
+          `}
+        >
+          Tech stack
+        </h2>
       </div>
-      <div>{skillTableContent}</div>
+      <div
+        css={css`
+          display: flex;
+          justify-content: center;
+        `}
+      >
+        <div
+          css={css`
+            max-width: 650px;
+          `}
+        >
+          {skillTableContent}
+        </div>
+      </div>
     </div>
   );
-}
-
-{
-  /* <div css={containerCss}>
-<Chip label="Basic" size="small" avatar={<FaReact />} />
-<Chip label="Disabled" disabled />
-<Chip
-  avatar={<Avatar>M</Avatar>}
-  label="Clickable"
-  onClick={handleClick}
-/>
-<Chip
-  avatar={<Avatar alt="Natacha" src="/static/images/avatar/1.jpg" />}
-  label="Deletable"
-  onDelete={handleDelete}
-/>
-<Chip
-  icon={<FaceIcon />}
-  label="Clickable deletable"
-  onClick={handleClick}
-  onDelete={handleDelete}
-/>
-<Chip
-  label="Custom delete icon"
-  onClick={handleClick}
-  onDelete={handleDelete}
-  deleteIcon={<DoneIcon />}
-/>
-<Chip label="Clickable Link" component="a" href="#chip" clickable />
-<Chip
-  avatar={<Avatar>M</Avatar>}
-  label="Primary clickable"
-  clickable
-  color="primary"
-  onDelete={handleDelete}
-  deleteIcon={<DoneIcon />}
-/>
-<Chip
-  icon={<FaceIcon />}
-  label="Primary clickable"
-  clickable
-  color="primary"
-  onDelete={handleDelete}
-  deleteIcon={<DoneIcon />}
-/>
-<Chip label="Deletable primary" onDelete={handleDelete} color="primary" />
-<Chip
-  icon={<FaceIcon />}
-  label="Deletable secondary"
-  onDelete={handleDelete}
-  color="secondary"
-/>
-</div> */
 }
