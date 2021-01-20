@@ -6,8 +6,8 @@ import { SiArduino } from "react-icons/si";
 import { MdWeb } from "react-icons/md";
 import { RiArticleLine } from "react-icons/ri";
 import { rhythm } from "../../utils/typography";
-
 import PhysIOCarousel from "./physIOCarousel";
+
 import drawingMachine from "../../assets/images/drawing_machine.jpg";
 import blomstreScreen from "../../assets/images/blomstre_screen.jpg";
 import timeglass from "../../assets/images/menu_bar2.png";
@@ -154,6 +154,7 @@ const Projects = () => {
           >
             <img
               src={drawingMachine}
+              alt="Drawing machine"
               css={css`
                 margin: ${rhythm(1)} 10px 0 0;
 
@@ -214,6 +215,7 @@ const Projects = () => {
             Mac-os status bar app.
           </h4>
           <img
+            alt="Timeglass screenshot"
             src={timeglass}
             css={css`
               border-radius: 5px;
@@ -250,8 +252,8 @@ const Projects = () => {
               max-width: 400px;
             `}
           >
-            {" "}
             <img
+              alt="Article"
               src={teknovatoren}
               css={css`
                 border-radius: 10px;

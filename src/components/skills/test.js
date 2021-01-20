@@ -4,21 +4,14 @@ import Avatar from "@material-ui/core/Avatar";
 import Chip from "@material-ui/core/Chip";
 import FaceIcon from "@material-ui/icons/Face";
 import DoneIcon from "@material-ui/icons/Done";
+import { css } from "@emotion/react";
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    display: "flex",
-    justifyContent: "center",
-    flexWrap: "wrap",
-    "& > *": {
-      margin: theme.spacing(0.5),
-    },
-  },
-}));
+const containerCss = css`
+  display: flex;
+  flex-wrap: wrap;
+`;
 
 export default function Chips() {
-  const classes = useStyles();
-
   const handleDelete = () => {
     console.info("You clicked the delete icon.");
   };
@@ -28,7 +21,7 @@ export default function Chips() {
   };
 
   return (
-    <div className={classes.root}>
+    <div css={containerCSS}>
       <Chip label="Basic" />
       <Chip label="Disabled" disabled />
       <Chip

@@ -3,6 +3,8 @@ import { css } from "@emotion/react";
 import selfie from "../../assets/images/selfie.jpg";
 import { rhythm } from "../../utils/typography";
 
+import Skills from "../../components/skills/test";
+
 const helloCss = css`
   width: 100%;
   display: flex;
@@ -33,6 +35,7 @@ const h1Css = css`
 const Hello = () => {
   return (
     <div css={helloCss} id="hello">
+      <Skills />
       <img src={selfie} css={imageCss} alt="Stian Klasbu" />
       <div css={textContainerCss}>
         <h1 css={h1Css}>
