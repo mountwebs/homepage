@@ -12,7 +12,7 @@ const helloCss = css`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: ${rhythm(1.25)};
+  margin-bottom: ${rhythm(1.5)};
 `;
 
 const imageCss = css`
