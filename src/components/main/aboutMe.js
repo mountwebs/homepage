@@ -3,21 +3,14 @@ import { css } from "@emotion/react";
 import { rhythm } from "../../utils/typography";
 import Title from "../common/title";
 
-const containerCss = css`
-  display: flex;
-  justify-content: center;
-  padding-top: ${rhythm(1.5)};
-`;
-
 const articleCss = css`
   max-width: 500px;
   margin: 0 20px;
-  padding-top: ${rhythm(1.5)};
+  padding-top: ${rhythm(1)};
 `;
 
 const AboutMe = () => {
   return (
-    // <div css={containerCss}>
     <article css={articleCss} id="aboutMe">
       <Title marginBottom={1}>About me</Title>
       <p>
@@ -40,7 +33,6 @@ const AboutMe = () => {
       IoT solution for my smart home, create music with some friends, create
       generative art with code, or create an app.
     </article>
-    // </div>
   );
 };
 

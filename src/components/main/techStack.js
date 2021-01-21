@@ -149,7 +149,7 @@ export default function Chips() {
     <div
       css={css`
         margin: 0 20px;
-        padding-top: ${rhythm(1.5)};
+        padding-top: ${rhythm(1)};
       `}
     >
       <Title marginBottom={0.5}>Tech stack</Title>
