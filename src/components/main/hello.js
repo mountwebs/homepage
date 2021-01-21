@@ -9,7 +9,7 @@ const helloCss = css`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: ${rhythm(0.5)};
+  margin-bottom: ${rhythm(0.75)};
 `;
 
 const imageCss = css`
