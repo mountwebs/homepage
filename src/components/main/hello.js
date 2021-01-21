@@ -3,13 +3,16 @@ import { css } from "@emotion/react";
 import selfie from "../../assets/images/selfie.jpg";
 import { rhythm } from "../../utils/typography";
 
+import video from "../../assets/videos/background.mp4";
+
 const helloCss = css`
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: ${rhythm(0.75)};
+  margin-bottom: ${rhythm(1.25)};
 `;
 
 const imageCss = css`
@@ -18,7 +21,7 @@ const imageCss = css`
   object-fit: cover;
   object-position: 0 25%;
   border-radius: 10%;
-  margin: ${rhythm(1)} 10px 0 10px;
+  margin: ${rhythm(1)} 10px 0 20px;
 `;
 
 const textContainerCss = css`
@@ -34,6 +37,25 @@ const h1Css = css`
 const Hello = () => {
   return (
     <div css={helloCss} id="hello">
+      <video
+        autoPlay
+        loop
+        muted
+        css={css`
+          position: absolute;
+          z-index: -1;
+          max-width: 1200px;
+          object-fit: cover;
+          width: 100%;
+          height: 495px;
+
+          @media only screen and (min-width: 550px) {
+            height: 370px;
+          }
+        `}
+      >
+        <source src={video} type="video/mp4" />
+      </video>
       <img src={selfie} css={imageCss} alt="Stian Klasbu" />
       <div css={textContainerCss}>
         <h1 css={h1Css}>
