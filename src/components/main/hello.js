@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 import selfie from "../../assets/images/selfie.jpg";
 import { rhythm } from "../../utils/typography";
 
-import backgroundVideo from "../../assets/videos/untitled5.mp4";
+import backgroundVideo from "../../assets/videos/Untitled5.mp4";
 
 const helloCss = css`
   position: relative;
