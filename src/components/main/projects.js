@@ -47,7 +47,11 @@ const Projects = () => {
             GraphQL). The blog uses markdown files via graphql.
           </p>
           <p>
-            <a href="https://github.com/mountwebs/homepage">Github</a>
+            The colorful video on top is written in in Pyton in Processing.{" "}
+            <a href="https://github.com/mountwebs/homepage">Source</a>
+          </p>
+          <p>
+            <a href="https://github.com/mountwebs/homepage">Source</a>
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
