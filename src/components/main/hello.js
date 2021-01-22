@@ -4,6 +4,7 @@ import selfie from "../../assets/images/selfie.jpg";
 import { rhythm } from "../../utils/typography";
 
 import backgroundVideo from "../../assets/videos/background.mp4";
+import poster from "../../assets/videos/poster.png";
 
 const helloCss = css`
   position: relative;
@@ -41,6 +42,7 @@ const Hello = () => {
         autoPlay
         loop
         muted
+        poster={poster}
         css={css`
           position: absolute;
           z-index: -1;

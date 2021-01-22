@@ -25,7 +25,7 @@ const Sidebar = () => {
       disableAutoFocus
       isOpen={menuState}
       onStateChange={state => setMenuState(state.isOpen)}
-      width={150}
+      width={180}
     >
       <ul css={listCss}>
         <li>
