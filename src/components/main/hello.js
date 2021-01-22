@@ -52,7 +52,7 @@ const Hello = () => {
           max-width: 1200px;
           object-fit: cover;
           width: 100%;
-          height: 480px;
+          height: 485px;
           margin-top: 20px;
 
           @media only screen and (min-width: 550px) {
