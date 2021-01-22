@@ -2,8 +2,10 @@ import React from "react";
 import { css } from "@emotion/react";
 import selfie from "../../assets/images/selfie.jpg";
 import { rhythm } from "../../utils/typography";
+import Media from "react-media";
 
-import video from "../../assets/videos/background.mp4";
+import videoWide from "../../assets/videos/background-wide.mp4";
+import videoHigh from "../../assets/videos/background-high.mp4";
 
 const helloCss = css`
   position: relative;
@@ -12,7 +14,7 @@ const helloCss = css`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: ${rhythm(1.5)};
+  margin-bottom: ${rhythm(2)};
 `;
 
 const imageCss = css`
@@ -37,25 +39,60 @@ const h1Css = css`
 const Hello = () => {
   return (
     <div css={helloCss} id="hello">
-      <video
-        autoPlay
-        loop
-        muted
-        css={css`
-          position: absolute;
-          z-index: -1;
-          max-width: 1200px;
-          object-fit: cover;
-          width: 100%;
-          height: 495px;
-
-          @media only screen and (min-width: 550px) {
-            height: 370px;
-          }
-        `}
+      <Media
+        queries={{
+          wide: "(min-width: 550px)",
+        }}
       >
-        <source src={video} type="video/mp4" />
-      </video>
+        {matches => (
+          <>
+            {matches.wide ? (
+              <video
+                autoPlay
+                loop
+                muted
+                css={css`
+                  position: absolute;
+                  z-index: -1;
+                  max-width: 1200px;
+                  object-fit: cover;
+                  width: 100%;
+                  height: 485px;
+                  margin-top: 20px;
+
+                  @media only screen and (min-width: 550px) {
+                    margin-top: 20px;
+                    height: 365px;
+                  }
+                `}
+              >
+                <source src={videoWide} type="video/mp4" />
+              </video>
+            ) : (
+              <video
+                autoPlay
+                loop
+                muted
+                css={css`
+                  position: absolute;
+                  z-index: -1;
+                  max-width: 1200px;
+                  object-fit: cover;
+                  width: 100%;
+                  height: 495px;
+
+                  @media only screen and (min-width: 550px) {
+                    height: 370px;
+                  }
+                `}
+              >
+                <source src={videoHigh} type="video/mp4" />
+              </video>
+            )}
+          </>
+        )}
+      </Media>
+
       <img src={selfie} css={imageCss} alt="Stian Klasbu" />
       <div css={textContainerCss}>
         <h1 css={h1Css}>

@@ -28,6 +28,7 @@
     "react-devicon": "^0.1.9",
     "react-dom": "^16.12.0",
     "react-icons": "^4.1.0",
+    "react-media": "^1.10.0",
     "react-slick": "^0.27.14",
     "react-typography": "^0.16.19",
     "react-vertical-timeline-component": "^3.3.1",
