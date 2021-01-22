@@ -151,8 +151,9 @@ export default function Chips() {
     <div
       css={css`
         margin: 0 20px;
-        padding-top: ${rhythm(1)};
+        margin-top: ${rhythm(1)};
       `}
+      id="stack"
     >
       <Title marginBottom={0.5}>Tech stack</Title>
       <div

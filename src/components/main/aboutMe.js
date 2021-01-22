@@ -6,7 +6,7 @@ import Title from "../common/title";
 const articleCss = css`
   max-width: 500px;
   margin: 0 20px;
-  padding-top: ${rhythm(1)};
+  margin-top: ${rhythm(1)};
 `;
 
 const AboutMe = () => {

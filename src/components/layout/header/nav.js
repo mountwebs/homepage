@@ -31,7 +31,7 @@ const Nav = () => {
         <AnchorLink css={linkCss} to="/#aboutMe">
           about
         </AnchorLink>
-        <AnchorLink css={linkCss} to="/#tech-stack">
+        <AnchorLink css={linkCss} to="/#stack">
           stack
         </AnchorLink>
         <AnchorLink css={linkCss} to="/#projects">
