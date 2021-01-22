@@ -56,8 +56,8 @@ const contentArray = [
   // { path: "signup.png", alt: "Signup", text: "Signup" },
 ];
 
-const content = contentArray.map(item => (
-  <div>
+const content = contentArray.map((item, index) => (
+  <div key={index}>
     <img css={imageCss} src={images[item.path]} alt={item.alt} />
     {"text" in item && (
       <div
