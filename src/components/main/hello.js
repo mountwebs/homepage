@@ -2,10 +2,8 @@ import React from "react";
 import { css } from "@emotion/react";
 import selfie from "../../assets/images/selfie.jpg";
 import { rhythm } from "../../utils/typography";
-import Media from "react-media";
 
 import videoWide from "../../assets/videos/background-wide.mp4";
-import videoHigh from "../../assets/videos/background-high.mp4";
 
 const helloCss = css`
   position: relative;
@@ -39,60 +37,27 @@ const h1Css = css`
 const Hello = () => {
   return (
     <div css={helloCss} id="hello">
-      <Media
-        queries={{
-          wide: "(max-width: 550px)",
-        }}
+      <video
+        autoPlay
+        loop
+        muted
+        css={css`
+          position: absolute;
+          z-index: -1;
+          max-width: 1200px;
+          object-fit: cover;
+          width: 100%;
+          height: 485px;
+          margin-top: 20px;
+
+          @media only screen and (min-width: 550px) {
+            margin-top: 20px;
+            height: 365px;
+          }
+        `}
       >
-        {matches => (
-          <>
-            {matches.wide ? (
-              <video
-                autoPlay
-                loop
-                muted
-                css={css`
-                  position: absolute;
-                  z-index: -1;
-                  max-width: 1200px;
-                  object-fit: cover;
-                  width: 100%;
-                  height: 495px;
-
-                  @media only screen and (min-width: 550px) {
-                    height: 370px;
-                  }
-                `}
-              >
-                <source src={videoHigh} type="video/mp4" />
-              </video>
-            ) : (
-              <video
-                autoPlay
-                loop
-                muted
-                css={css`
-                  position: absolute;
-                  z-index: -1;
-                  max-width: 1200px;
-                  object-fit: cover;
-                  width: 100%;
-                  height: 485px;
-                  margin-top: 20px;
-
-                  @media only screen and (min-width: 550px) {
-                    margin-top: 20px;
-                    height: 365px;
-                  }
-                `}
-              >
-                <source src={videoWide} type="video/mp4" />
-              </video>
-            )}
-          </>
-        )}
-      </Media>
-
+        <source src={videoWide} type="video/mp4" />
+      </video>
       <img src={selfie} css={imageCss} alt="Stian Klasbu" />
       <div css={textContainerCss}>
         <h1 css={h1Css}>
