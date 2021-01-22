@@ -84,8 +84,6 @@ const PhysIOCarousel = () => {
     adaptiveHeight: true,
   };
 
-  console.log(content);
-
   return (
     <Slider
       {...settings}
