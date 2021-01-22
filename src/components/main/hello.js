@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { css } from "@emotion/react";
 import selfie from "../../assets/images/selfie.jpg";
 import { rhythm } from "../../utils/typography";
@@ -36,8 +36,11 @@ const h1Css = css`
 `;
 
 const Hello = () => {
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => setLoaded(true), []);
   return (
     <div css={helloCss} id="hello">
+      {!loaded && "test"}
       <video
         autoPlay
         loop
