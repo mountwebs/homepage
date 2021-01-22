@@ -106,8 +106,9 @@ export default function Chips() {
     },
   ];
 
-  const skillTableContent = skills.map(item => (
+  const skillTableContent = skills.map((item, index) => (
     <div
+      key={index}
       css={css`
         display: flex;
         margin: ${rhythm(0.5)} 0;
@@ -131,9 +132,10 @@ export default function Chips() {
           max-width: 400px;
         `}
       >
-        {item.chips.map(chip => (
+        {item.chips.map((chip, index) => (
           <Chip
             size="small"
+            key={index}
             label={chip.label}
             avatar={chip.icon}
             css={css`
