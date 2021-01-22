@@ -41,12 +41,32 @@ const Hello = () => {
     <div css={helloCss} id="hello">
       <Media
         queries={{
-          wide: "(min-width: 550px)",
+          wide: "(max-width: 550px)",
         }}
       >
         {matches => (
           <>
             {matches.wide ? (
+              <video
+                autoPlay
+                loop
+                muted
+                css={css`
+                  position: absolute;
+                  z-index: -1;
+                  max-width: 1200px;
+                  object-fit: cover;
+                  width: 100%;
+                  height: 495px;
+
+                  @media only screen and (min-width: 550px) {
+                    height: 370px;
+                  }
+                `}
+              >
+                <source src={videoHigh} type="video/mp4" />
+              </video>
+            ) : (
               <video
                 autoPlay
                 loop
@@ -67,26 +87,6 @@ const Hello = () => {
                 `}
               >
                 <source src={videoWide} type="video/mp4" />
-              </video>
-            ) : (
-              <video
-                autoPlay
-                loop
-                muted
-                css={css`
-                  position: absolute;
-                  z-index: -1;
-                  max-width: 1200px;
-                  object-fit: cover;
-                  width: 100%;
-                  height: 495px;
-
-                  @media only screen and (min-width: 550px) {
-                    height: 370px;
-                  }
-                `}
-              >
-                <source src={videoHigh} type="video/mp4" />
               </video>
             )}
           </>
