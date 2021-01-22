@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 import selfie from "../../assets/images/selfie.jpg";
 import { rhythm } from "../../utils/typography";
 
-import videoWide from "../../assets/videos/background-wide.mp4";
+import video from "../../assets/videos/background.mp4";
 
 const helloCss = css`
   position: relative;
@@ -56,7 +56,7 @@ const Hello = () => {
           }
         `}
       >
-        <source src={videoWide} type="video/mp4" />
+        <source src={video} type="video/mp4" />
       </video>
       <img src={selfie} css={imageCss} alt="Stian Klasbu" />
       <div css={textContainerCss}>
