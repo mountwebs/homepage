@@ -32,8 +32,8 @@ import {
   SiAmazonaws,
   SiRaspberrypi,
   SiNetlify,
+  SiAdobephotoshop,
 } from "react-icons/si";
-import { GrMysql } from "react-icons/gr";
 
 import { css } from "@emotion/react";
 
@@ -67,7 +67,6 @@ export default function Chips() {
         { label: "MongoDB", icon: <SiMongodb /> },
         { label: "PostgreSQL", icon: <SiPostgresql /> },
         { label: "InfluxDB", icon: <SiInfluxdb /> },
-        { label: "MySQL", icon: <GrMysql /> },
         { label: "GraphQL", icon: <SiGraphql /> },
         { label: "Bootstrap", icon: <FaBootstrap /> },
       ],
@@ -103,6 +102,8 @@ export default function Chips() {
         { label: "Docker", icon: <SiDocker /> },
         { label: "Bash", icon: <SiGnubash /> },
         { label: "Postman", icon: <SiPostman /> },
+        { label: "Processing" },
+        { label: "Photoshop", icon: <SiAdobephotoshop /> },
       ],
     },
   ];
