@@ -4,7 +4,7 @@ import { SiGithub } from "react-icons/si";
 
 const GithubButton = ({ children, href, style }) => {
   return (
-    <div style={style}>
+    <div style={{ ...style, display: "inline", marginRight: "10px" }}>
       <Button variant="contained" href={href} style={{ textTransform: "none" }}>
         <SiGithub
           style={{

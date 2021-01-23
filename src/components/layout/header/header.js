@@ -7,18 +7,12 @@ import { rhythm } from "../../../utils/typography";
 const outerContainerCss = css`
   width: 100%;
   margin-bottom: ${rhythm(1)};
-  background-color: white;
+  background-color: rgb(247, 247, 247);
   position: fixed;
   z-index: 100;
   display: flex;
   justify-content: center;
 `;
-
-// const innerContainerCss = css`
-//   display: flex;
-//   justify-content: center;
-//   max-width: 800px;
-// `;
 
 const headerCss = css`
   flex-grow: 1;

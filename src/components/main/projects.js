@@ -9,6 +9,7 @@ import { rhythm } from "../../utils/typography";
 import PhysIOCarousel from "./physIOCarousel";
 import Title from "../common/title";
 import GithubButton from "../common/githubButton";
+import TechChipList from "../common/techChipList";
 
 import drawingMachine from "../../assets/images/drawing_machine.jpg";
 import blomstreScreen from "../../assets/images/blomstre_screen.jpg";
@@ -43,6 +44,11 @@ const Projects = () => {
           <h4 className="vertical-timeline-element-subtitle">
             Portfolio and blog
           </h4>
+          <TechChipList
+            list={["Gatsby", "React", "GraphQL", "Python"]}
+            style={{ marginTop: "5px" }}
+          />
+
           <p>
             The page you are on. It is created with Gatsby (with React and
             GraphQL). The blog uses markdown files via graphql.
@@ -51,10 +57,7 @@ const Projects = () => {
             The colorful video on top is written in in Pyton in Processing.{" "}
           </p>
           <p>
-            <GithubButton
-              href={"https://github.com/mountwebs/homepage"}
-              style={{ marginBottom: "10px" }}
-            >
+            <GithubButton href={"https://github.com/mountwebs/homepage"}>
               Project Code
             </GithubButton>
             <GithubButton
@@ -76,6 +79,16 @@ const Projects = () => {
           <h4 className="vertical-timeline-element-subtitle">
             Prototype full-stack web application
           </h4>
+          <TechChipList
+            list={["Node", "Express", "MongoDB", "Mongoose", "Passport"]}
+            name={"Backend: "}
+            style={{ marginTop: "10px" }}
+          />
+          <TechChipList
+            list={["React", "Redux"]}
+            name={"Frontend: "}
+            style={{ marginTop: "5px" }}
+          />
           <div
             css={css`
               margin: 10px 0 30px;
@@ -83,11 +96,6 @@ const Projects = () => {
           >
             <PhysIOCarousel />
           </div>
-          <p>
-            Frontend: React & Redux
-            <br />
-            Backend: REST API with NodeJS, Express, Pasport, Mongoose & MongoDB
-          </p>
           <p>
             App to help physiotherapists and their clients (making and
             scheduling exercises etc.) Created with my mob at Salt at a 2-week
@@ -112,7 +120,6 @@ const Projects = () => {
           date="November 2020"
           iconStyle={{
             background: "rgb(247, 247, 247)",
-            // color: "rgb(95, 212, 247)",
           }}
           icon={<FaReact />}
         >
@@ -120,19 +127,24 @@ const Projects = () => {
           <h4 className="vertical-timeline-element-subtitle">
             Full-stack prototype web application
           </h4>
+          <TechChipList
+            list={["Node", "Express", "MongoDB", "Mongoose"]}
+            name={"Backend: "}
+            style={{ marginTop: "10px" }}
+          />
+          <TechChipList
+            list={["React", "Redux"]}
+            name={"Frontend: "}
+            style={{ marginTop: "5px" }}
+          />
           <img
             src={blomstreScreen}
             css={css`
-              margin: ${rhythm(1)} 10px 0 0;
+              margin: ${rhythm(0.5)} 10px 0 0;
               border-radius: 10px;
             `}
             alt="Screenshot of blomstre-app"
           />
-          <p>
-            Frontend: React & Redux
-            <br />
-            Backend: REST API with NodeJS, Express, Mongoose & MongoDB
-          </p>
           <p>
             A prototype for a personal planttracker, showing you if your plants
             are happy or not.
@@ -143,9 +155,11 @@ const Projects = () => {
           </p>
 
           <p>
-            <a href="https://github.com/mountwebs/blomstre-planttracker">
-              Github
-            </a>
+            <GithubButton
+              href={"https://github.com/mountwebs/blomstre-planttracker"}
+            >
+              Code
+            </GithubButton>
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -153,7 +167,6 @@ const Projects = () => {
           date="July 2020"
           iconStyle={{
             background: "rgb(247, 247, 247)",
-            color: "black",
           }}
           icon={<SiArduino />}
         >
@@ -170,8 +183,7 @@ const Projects = () => {
               src={drawingMachine}
               alt="Drawing machine"
               css={css`
-                margin: ${rhythm(1)} 10px 0 0;
-
+                margin: ${rhythm(0.5)} 10px 0 0;
                 border-radius: 10px;
               `}
             />
@@ -179,10 +191,6 @@ const Projects = () => {
 
           <p>
             A homemade drawing machine with 3d printed parts. Powerd by arduino.
-          </p>
-          <p>
-            Read more about it and see examples of what it can make{" "}
-            <a href="/blog">in this not yet existing blog post</a>.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -243,7 +251,9 @@ const Projects = () => {
             minimalistic hour glass animation in the menu bar.
           </p>
           <p>
-            <a href="https://github.com/mountwebs/timeglass">Github</a>
+            <GithubButton href="https://github.com/mountwebs/timeglass">
+              Code
+            </GithubButton>
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement

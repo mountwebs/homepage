@@ -80,18 +80,18 @@ export default function Chips() {
       ],
     },
     {
-      type: "Micro electronics",
-      chips: [
-        { label: "Arduino", icon: <SiArduino /> },
-        { label: "Raspberry pi", icon: <SiRaspberrypi /> },
-      ],
-    },
-    {
       type: "Deployment",
       chips: [
         { label: "Heroku", icon: <SiHeroku /> },
         { label: "Amazon AWS", icon: <SiAmazonaws /> },
         { label: "Netlify", icon: <SiNetlify /> },
+      ],
+    },
+    {
+      type: "Tinkering",
+      chips: [
+        { label: "Arduino", icon: <SiArduino /> },
+        { label: "Raspberry pi", icon: <SiRaspberrypi /> },
       ],
     },
     {
