@@ -61,6 +61,7 @@ export default function Chips() {
     {
       type: "Back-end",
       chips: [
+        { label: "REST API" },
         { label: "Node", icon: <FaNodeJs /> },
         { label: "Express" },
         { label: "MongoDB", icon: <SiMongodb /> },
