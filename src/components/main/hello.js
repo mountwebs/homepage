@@ -36,11 +36,8 @@ const h1Css = css`
 `;
 
 const Hello = () => {
-  const [loaded, setLoaded] = useState(false);
-  useEffect(() => setLoaded(true), []);
   return (
     <div css={helloCss} id="hello">
-      {!loaded && "test"}
       <video
         autoPlay
         loop
