@@ -8,6 +8,7 @@ import { RiArticleLine } from "react-icons/ri";
 import { rhythm } from "../../utils/typography";
 import PhysIOCarousel from "./physIOCarousel";
 import Title from "../common/title";
+import GithubButton from "../common/githubButton";
 
 import drawingMachine from "../../assets/images/drawing_machine.jpg";
 import blomstreScreen from "../../assets/images/blomstre_screen.jpg";
@@ -48,10 +49,19 @@ const Projects = () => {
           </p>
           <p>
             The colorful video on top is written in in Pyton in Processing.{" "}
-            <a href="https://github.com/mountwebs/homepage">Source</a>
           </p>
           <p>
-            <a href="https://github.com/mountwebs/homepage">Source</a>
+            <GithubButton
+              href={"https://github.com/mountwebs/homepage"}
+              style={{ marginBottom: "10px" }}
+            >
+              Project Code
+            </GithubButton>
+            <GithubButton
+              href={"https://github.com/mountwebs/generative-drawings"}
+            >
+              Animation Code
+            </GithubButton>
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -84,13 +94,17 @@ const Projects = () => {
             sprint.
           </p>
           <p>
-            <a href="https://github.com/MaciejGL/final-project-frontend">
-              Frontend
-            </a>
-            <br />
-            <a href="https://github.com/MaciejGL/final-project-backend">
-              Backend
-            </a>
+            <GithubButton
+              href={"https://github.com/MaciejGL/final-project-frontend"}
+              style={{ marginBottom: "10px" }}
+            >
+              Frontend Code
+            </GithubButton>
+            <GithubButton
+              href={"https://github.com/MaciejGL/final-project-backend"}
+            >
+              Backend Code
+            </GithubButton>
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
