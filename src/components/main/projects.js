@@ -9,7 +9,7 @@ import { RiArticleLine } from "react-icons/ri";
 import { rhythm } from "../../utils/typography";
 import PhysIOCarousel from "./physIOCarousel";
 import Title from "../common/title";
-import MyButton from "../common/MyButton";
+import MyButton from "../common/myButton";
 import TechChipList from "../common/techChipList";
 import { SiGithub } from "react-icons/si";
 
