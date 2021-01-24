@@ -62,7 +62,7 @@ const Hello = () => {
       </video>
       <img src={selfie} css={imageCss} alt="Stian Klasbu" />
       <div css={textContainerCss}>
-        <h1 css={h1Css}>
+        <h1 css={h1Css} className="hello-dark">
           <u>Hi, I'm Stian</u> Developer, Maker & Writer.
         </h1>
       </div>
