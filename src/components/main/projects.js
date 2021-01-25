@@ -1,8 +1,6 @@
 import React from "react";
 import { css } from "@emotion/react";
-import { FaReact, FaPython, FaGraduationCap } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { GrGatsbyjs } from "react-icons/gr";
+import { FaGraduationCap } from "react-icons/fa";
 import { SiArduino } from "react-icons/si";
 import { MdWeb } from "react-icons/md";
 import { RiArticleLine } from "react-icons/ri";
@@ -12,6 +10,7 @@ import Title from "../common/title";
 import MyButton from "../common/myButton";
 import TechChipList from "../common/techChipList";
 import { SiGithub } from "react-icons/si";
+import * as logos from "../common/logos";
 
 import drawingMachine from "../../assets/images/drawing_machine.jpg";
 import blomstreScreen from "../../assets/images/blomstre_screen.jpg";
@@ -41,7 +40,7 @@ const Projects = () => {
           iconStyle={{
             background: "rgb(247, 247, 247)",
           }}
-          icon={<GrGatsbyjs />}
+          icon={logos.gatsby}
         >
           <h3 className="vertical-timeline-element-title">
             Portfolio and blog
@@ -157,7 +156,7 @@ const Projects = () => {
           iconStyle={{
             background: "rgb(247, 247, 247)",
           }}
-          icon={<FaReact />}
+          icon={logos.react}
         >
           <h3 className="vertical-timeline-element-title">Blomstre</h3>
           <h4 className="vertical-timeline-element-subtitle">
@@ -209,7 +208,7 @@ const Projects = () => {
           iconStyle={{
             background: "rgb(247, 247, 247)",
           }}
-          icon={<IoLogoJavascript />}
+          icon={logos.js}
         >
           <h3 className="vertical-timeline-element-title">SPA gallery</h3>
           <img
@@ -266,6 +265,7 @@ const Projects = () => {
           date="July 2020"
           iconStyle={{
             background: "rgb(247, 247, 247)",
+            color: "rgb(65, 150, 156)",
           }}
           icon={<SiArduino />}
         >
@@ -328,7 +328,7 @@ const Projects = () => {
           iconStyle={{
             background: "rgb(247, 247, 247)",
           }}
-          icon={<FaPython />}
+          icon={logos.python}
         >
           <h3 className="vertical-timeline-element-title">Timeglass</h3>
           <h4 className="vertical-timeline-element-subtitle">
