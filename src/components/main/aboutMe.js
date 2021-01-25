@@ -32,7 +32,7 @@ const AboutMe = () => {
       <p>
         In my spare time I love to create things - whether that is to create an
         IoT solution for my smart home, create music with some friends, create
-        generative art with code, or create apps.
+        generative drawings with code, or create apps.
       </p>
       <p>
         On this page you will find my projects and tech stack. Also take a look
