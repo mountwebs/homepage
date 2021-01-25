@@ -30,6 +30,7 @@ import {
   SiAmazonaws,
   SiRaspberrypi,
   SiNetlify,
+  SiFigma,
 } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 
@@ -62,6 +63,7 @@ const icons = {
   SiRaspberrypi,
   SiNetlify,
   GrMysql,
+  SiFigma,
 };
 
 const TechChip = ({ tech }) => {

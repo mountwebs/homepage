@@ -309,7 +309,7 @@ const Projects = () => {
             My thesis was about privacy and I wrote about GDPR, EUs privacy law,
             and how that law was translated into practice and implemented by
             developers. It was written in the academic field of Science and
-            technology studies.
+            technology studies. It was rewarded with a top grade.
           </p>
           <p>
             <a href="https://www.sv.uio.no/tik/english/">

@@ -33,6 +33,7 @@ import {
   SiRaspberrypi,
   SiNetlify,
   SiAdobephotoshop,
+  SiFigma,
 } from "react-icons/si";
 
 import { css } from "@emotion/react";
@@ -103,6 +104,7 @@ export default function Chips() {
         { label: "Bash", icon: <SiGnubash /> },
         { label: "Postman", icon: <SiPostman /> },
         { label: "Processing" },
+        { label: "Figma", icon: <SiFigma /> },
         { label: "Photoshop", icon: <SiAdobephotoshop /> },
       ],
     },
