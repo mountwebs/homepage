@@ -41,7 +41,7 @@ const AboutMe = () => {
       </p>
       <p>
         <b>
-          I am currently looking for a job. If you are interested in hiering me,
+          I am currently looking for a job. If you are interested in hiring me,
           take a look at my{" "}
           <a href="https://www.linkedin.com/in/stian-klasbu-917a40162/">
             linkedIn profile

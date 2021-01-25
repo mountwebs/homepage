@@ -1,3 +1,9 @@
+:root {
+  --dev: rgb(144, 67, 233);
+  --maker: rgb(37, 231, 37);
+  --writer: rgb(0, 241, 233);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

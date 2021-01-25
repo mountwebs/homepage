@@ -14,7 +14,7 @@ function importAll(r) {
 }
 
 const images = importAll(
-  require.context("../../assets/images/physIO", false, /.png/)
+  require.context("../../../assets/images/physIO", false, /.png/)
 );
 
 const imageCss = css`
