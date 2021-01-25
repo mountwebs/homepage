@@ -19,11 +19,11 @@ const AboutMe = () => {
       </p>
       <p>
         Last year I finished my master thesis in Science and technology studies
-        with a top grade. I have always had coding and tech-tinkering as a
-        interest and hobby, and after thinking and writing about tech in more
-        abstract terms, I decided to take a big step and turn a passion into a
-        new career path and becoming a full-stack web developer. I have recently
-        finished an accelerated career program at{" "}
+        with a top grade. Coding and tech-tinkering has always been some of my
+        main interests and hobbies, and after thinking and writing about tech in
+        more abstract terms, I decided to take a big step and turn a passion
+        into a new career path and becoming a full-stack web developer. I have
+        recently finished an accelerated career program at{" "}
         <a href="https://salt.dev/">
           School of applied technology {"<"}/salt{">"}
         </a>

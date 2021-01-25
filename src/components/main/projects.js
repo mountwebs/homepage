@@ -43,10 +43,9 @@ const Projects = () => {
           }}
           icon={<GrGatsbyjs />}
         >
-          <h3 className="vertical-timeline-element-title">Homepage</h3>
-          <h4 className="vertical-timeline-element-subtitle">
+          <h3 className="vertical-timeline-element-title">
             Portfolio and blog
-          </h4>
+          </h3>
           <TechChipList
             list={["Gatsby", "React", "GraphQL", "Python"]}
             style={{ marginTop: "5px" }}
@@ -56,9 +55,7 @@ const Projects = () => {
             The page you are on. It is created with Gatsby (with React and
             GraphQL). The blog uses markdown files via graphql.
           </p>
-          <p>
-            The colorful video on top is written in in Pyton in Processing.{" "}
-          </p>
+          <p>The colorful video on top is written in Pyton in Processing. </p>
           <p>
             <MyButton href={"https://github.com/mountwebs/homepage"}>
               <SiGithub
