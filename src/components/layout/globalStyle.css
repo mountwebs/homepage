@@ -8,7 +8,7 @@ body {
   background-color: rgb(247, 247, 247);
 }
 
-@media screen and (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: light) {
   .header-dark {
     color: white;
   }

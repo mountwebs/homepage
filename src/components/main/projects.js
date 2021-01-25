@@ -36,13 +36,12 @@ const Projects = () => {
       <Title marginBottom={0.5}>Projects</Title>
       <VerticalTimeline animate={false}>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className={["vertical-timeline-element--work", "icon-dark"]}
           date="January 2021"
           iconStyle={{
             background: "rgb(247, 247, 247)",
           }}
           icon={<GrGatsbyjs />}
-          className="icon-dark"
         >
           <h3 className="vertical-timeline-element-title">Homepage</h3>
           <h4 className="vertical-timeline-element-subtitle">
@@ -84,13 +83,12 @@ const Projects = () => {
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className={["vertical-timeline-element--work", "icon-dark"]}
           date="December 2020"
           iconStyle={{
             background: "rgb(247, 247, 247)",
           }}
           icon={<MdWeb />}
-          className="icon-dark"
         >
           <h3 className="vertical-timeline-element-title">PhysIO</h3>
           <h4 className="vertical-timeline-element-subtitle">
@@ -154,13 +152,12 @@ const Projects = () => {
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className={["vertical-timeline-element--work", "icon-dark"]}
           date="November 2020"
           iconStyle={{
             background: "rgb(247, 247, 247)",
           }}
           icon={<FaReact />}
-          className="icon-dark"
         >
           <h3 className="vertical-timeline-element-title">Blomstre</h3>
           <h4 className="vertical-timeline-element-subtitle">
@@ -207,13 +204,12 @@ const Projects = () => {
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className={["vertical-timeline-element--work", "icon-dark"]}
           date="November 2020"
           iconStyle={{
             background: "rgb(247, 247, 247)",
           }}
           icon={<IoLogoJavascript />}
-          className="icon-dark"
         >
           <h3 className="vertical-timeline-element-title">SPA gallery</h3>
           <img
@@ -266,13 +262,12 @@ const Projects = () => {
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className={["vertical-timeline-element--work", "icon-dark"]}
           date="July 2020"
           iconStyle={{
             background: "rgb(247, 247, 247)",
           }}
           icon={<SiArduino />}
-          className="icon-dark"
         >
           <h3 className="vertical-timeline-element-title">Drawing machine</h3>
           <h4 className="vertical-timeline-element-subtitle">
@@ -297,13 +292,12 @@ const Projects = () => {
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className={["vertical-timeline-element--work", "icon-dark"]}
           date="June 2020"
           iconStyle={{
             background: "rgb(247, 247, 247)",
           }}
           icon={<FaGraduationCap />}
-          className="icon-dark"
         >
           <h3 className="vertical-timeline-element-title">Master thesis</h3>
           <h4 className="vertical-timeline-element-subtitle">
@@ -328,13 +322,12 @@ const Projects = () => {
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className={["vertical-timeline-element--work", "icon-dark"]}
           date="May 2020"
           iconStyle={{
             background: "rgb(247, 247, 247)",
           }}
           icon={<FaPython />}
-          className="icon-dark"
         >
           <h3 className="vertical-timeline-element-title">Timeglass</h3>
           <h4 className="vertical-timeline-element-subtitle">
@@ -368,13 +361,12 @@ const Projects = () => {
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className={["vertical-timeline-element--work", "icon-dark"]}
           date="March 2019"
           iconStyle={{
             background: "rgb(247, 247, 247)",
           }}
           icon={<RiArticleLine />}
-          className="icon-dark"
         >
           <h3 className="vertical-timeline-element-title">
             Looking back, moving forward: retracing one of TIK’s intellectual
