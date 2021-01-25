@@ -115,9 +115,12 @@ const Projects = () => {
             list={["React", "Redux"]}
           />
           <p>
-            App to help physiotherapists and their clients (making and
-            scheduling exercises etc.) Created with my mob at Salt at a 2-week
-            sprint together with Barbara Zujewska and Maciej Głowacki.
+            App for physiotherapists and their clients. The app provides the
+            physotherapist with an easier way to share exercises and sessions
+            with their clients. This app could be espeically helpful when it
+            hard to meet face to face, such as during a pandemic. Created with
+            my mob at Salt at a 2-week sprint together with Barbara Zujewska and
+            Maciej Głowacki.
           </p>
           <p>
             <MyButton
@@ -304,9 +307,9 @@ const Projects = () => {
           </h4>
           <p>
             My thesis was about privacy and I wrote about GDPR, EUs privacy law,
-            and how that law was translated into practice and met by and
-            implemented by developers. It was written in the academic field of
-            Science and technology studies.
+            and how that law was translated into practice and implemented by
+            developers. It was written in the academic field of Science and
+            technology studies.
           </p>
           <p>
             <a href="https://www.sv.uio.no/tik/english/">
