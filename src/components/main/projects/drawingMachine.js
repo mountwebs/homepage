@@ -2,11 +2,10 @@ import React from "react";
 import { css } from "@emotion/react";
 import { rhythm } from "../../../utils/typography";
 import { SiArduino } from "react-icons/si";
+import DrawingCarousel from "./drawingCarousel";
 
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-
-import drawingMachine from "../../../assets/images/drawing_machine.jpg";
 
 const DrawingMachine = () => {
   return (
@@ -26,18 +25,11 @@ const DrawingMachine = () => {
       </h4>
       <div
         css={css`
-          max-width: 300px;
+          padding: ${rhythm(1)} 0;
         `}
       >
-        <img
-          src={drawingMachine}
-          alt="Drawing machine"
-          css={css`
-            margin: ${rhythm(0.5)} 10px 0 0;
-          `}
-        />
+        <DrawingCarousel />
       </div>
-
       <p>
         A homemade drawing machine with 3d printed parts. Powerd by arduino.
       </p>
