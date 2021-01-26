@@ -50,9 +50,9 @@ const PhysIO = () => {
       <p>
         App for physiotherapists and their clients. The app provides the
         physotherapist with an easier way to share exercises and sessions with
-        their clients. This app could be espeically helpful when it hard to meet
-        face to face, such as during a pandemic. Created with my mob at Salt at
-        a 2-week sprint together with Barbara Zujewska and Maciej Głowacki.
+        their clients. It could be espeically helpful when it hard to meet face
+        to face, such as during a pandemic. Created with my mob at Salt at a
+        2-week sprint together with Barbara Zujewska and Maciej Głowacki.
       </p>
       <p>
         <MyButton

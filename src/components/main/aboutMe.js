@@ -22,12 +22,23 @@ const AboutMe = () => {
         Coding and tech-tinkering has always been some of my main interests and
         hobbies, and after thinking and writing about tech in more abstract
         terms, I decided to take a big step and turn a passion into a new career
-        path and becoming a developer. I have recently finished an accelerated
+        path and becoming a developer. Last summer I applied to the accelerated
         career program at{" "}
         <a href="https://salt.dev/">
           School of applied technology {"<"}/salt{">"}
         </a>
-        .
+        . And I got in! In December I completed the program together with 30
+        students, selected from 1500 applicants.
+      </p>
+      <p>
+        <b>
+          Now it's time to get started working as a developer! If you are
+          interested in hiring me, take a look at my{" "}
+          <a href="https://www.linkedin.com/in/stian-klasbu-917a40162/">
+            linkedIn profile
+          </a>{" "}
+          or write me an <a href="mailto:stiangk@gmail.com">email</a>.
+        </b>
       </p>
       <p>
         In my spare time I love to create things - whether that is to create an
@@ -38,16 +49,6 @@ const AboutMe = () => {
         On this page you will find my projects and tech stack. Also take a look
         at my <a href="/blog/">blog</a> where I plan to write more about my
         current projects and thoughts on tehcnology.
-      </p>
-      <p>
-        <b>
-          I am currently looking for a job. If you are interested in hiring me,
-          take a look at my{" "}
-          <a href="https://www.linkedin.com/in/stian-klasbu-917a40162/">
-            linkedIn profile
-          </a>{" "}
-          or write me an <a href="mailto:stiangk@gmail.com">email</a>.
-        </b>
       </p>
     </article>
   );
