@@ -6,6 +6,7 @@ import AboutMe from "../components/main/aboutMe";
 import Projects from "../components/main/projects";
 import TechStack from "../components/main/techStack";
 
+
 const wrapOuterCss = css`
   width: 100%;
   display: flex;
@@ -21,6 +22,8 @@ const wrapInnerCss = css`
 `;
 
 const Home = () => {
+
+
   return (
     <Layout>
       <Hello />
