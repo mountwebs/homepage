@@ -5,6 +5,8 @@ import Hello from "../components/main/hello";
 import AboutMe from "../components/main/aboutMe";
 import Projects from "../components/main/projects";
 import TechStack from "../components/main/techStack";
+import { Helmet } from "react-helmet";
+import screenshot from "../assets/images/Screenshot.jpg";
 
 const wrapOuterCss = css`
   width: 100%;
@@ -23,6 +25,15 @@ const wrapInnerCss = css`
 const Home = () => {
   return (
     <Layout>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Stians portfolio and blog</title>
+        <link rel="canonical" href="https://stiangk.netlify.app/" />
+        <meta property="og:title" content="Stian Klasbus portfolio and blog" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://stiangk.netlify.app/" />
+        <meta property="og:image" content={screenshot} />
+      </Helmet>
       <Hello />
       <div css={wrapOuterCss}>
         <div css={wrapInnerCss}>
