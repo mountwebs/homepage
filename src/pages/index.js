@@ -32,6 +32,10 @@ const Home = () => {
         <meta property="og:title" content="Stian Klasbus portfolio and blog" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://stiangk.netlify.app/" />
+        <meta
+          property="og:description"
+          content="Hi, I'm Stian Developer, Maker & Writer. I am a full-stack web developer based in Oslo, with a passion for creating and writing about technology."
+        />
         <meta property="og:image" content={screenshot} />
       </Helmet>
       <Hello />
