@@ -31,16 +31,6 @@ const AboutMe = () => {
         students, selected from 1500 applicants.
       </p>
       <p>
-        <b>
-          Now it's time to get started working as a developer! If you are
-          interested in hiring me, take a look at my{" "}
-          <a href="https://www.linkedin.com/in/stian-klasbu-917a40162/">
-            linkedIn profile
-          </a>{" "}
-          or write me an <a href="mailto:stiangk@gmail.com">email</a>.
-        </b>
-      </p>
-      <p>
         In my spare time I love to create things - whether that is to create an
         IoT solution for my smart home, create music with some friends, create
         generative drawings with code, or create apps.
