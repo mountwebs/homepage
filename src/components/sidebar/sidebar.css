@@ -17,6 +17,12 @@
   background: #a90000;
 }
 
+@media screen and (prefers-color-scheme: light) {
+  .bm-burger-bars {
+    background: grey;
+  }
+}
+
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
   height: 24px;

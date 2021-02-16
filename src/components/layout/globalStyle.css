@@ -13,3 +13,29 @@
 body {
   background-color: rgb(247, 247, 247);
 }
+
+@media screen and (prefers-color-scheme: light) {
+  .header-dark {
+    color: white;
+  }
+
+  .hello-dark {
+    color: grey;
+  }
+  .icon-dark {
+    color: grey;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .header-dark {
+    color: black;
+  }
+
+  .hello-dark {
+    color: black;
+  }
+  .icon-dark {
+    color: black;
+  }
+}

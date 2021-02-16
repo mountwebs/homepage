@@ -21,19 +21,17 @@ const headerCss = css`
   align-items: flex-end;
   padding-top: ${rhythm(1)};
   margin: 0 20px;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid black;
   max-width: 1200px;
 `;
 
 const Header = () => {
   return (
     <div css={outerContainerCss}>
-      {/* <div css={innerContainerCss}> */}
-      <header css={headerCss}>
+      <header css={headerCss} className={"header-dark"}>
         <Title />
         <Nav />
       </header>
-      {/* </div> */}
     </div>
   );
 };

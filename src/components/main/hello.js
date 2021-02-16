@@ -39,7 +39,9 @@ const h1Css = css`
 const Hello = () => {
   let [loading, setLoading] = useState(true);
 
-  useEffect(() => {setLoading(false)}, [])
+  useEffect(() => {
+    setLoading(false);
+  }, []);
 
   return (
     <div css={helloCss} id="hello">
@@ -66,9 +68,9 @@ const Hello = () => {
         <source src={backgroundVideo} type="video/mp4" />
       </video>
       <img src={selfie} css={imageCss} alt="Stian Klasbu" />
-      
+
       <div css={textContainerCss}>
-      <PulseLoader loading={loading} size={8}/>
+        <PulseLoader loading={loading} size={8} />
         <h1 css={h1Css}>
           <u>Hi, I'm Stian</u> Developer, Maker & Writer.
         </h1>
