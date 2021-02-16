@@ -12,7 +12,7 @@ const containerCss = css`
 
 const mainCss = css`
   max-width: 650px;
-  padding: ${rhythm(1)};
+  padding: ${rhythm(0.5)} 20px;
 `;
 
 export default function BlogPost({ data }) {
@@ -22,6 +22,16 @@ export default function BlogPost({ data }) {
     <Layout>
       <div css={containerCss}>
         <main css={mainCss}>
+          <p>
+            <small>
+              <a
+                href="/blog"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <b>Stian </b> / {post.frontmatter.date}{" "}
+              </a>
+            </small>
+          </p>
           <h1>{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           <p style={{ color: "#888" }}>Written {post.frontmatter.date}.</p>
