@@ -16,7 +16,19 @@ module.exports = {
         offset: -70,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-vscode`,
+            options: {
+              theme: "Monokai",
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-slug",
     `gatsby-plugin-emotion`,

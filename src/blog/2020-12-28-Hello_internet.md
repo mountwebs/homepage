@@ -3,6 +3,7 @@ layout: post
 title: Hello internet!
 date: "2020-12-28"
 slug: "blog/hello-internet"
+modified: "2020-12-28"
 ---
 
 This is my new blog. On this blog I will write about my coding, tinkering projects and share my thoughts on technology.

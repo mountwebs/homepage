@@ -15,6 +15,10 @@ const mainCss = css`
   padding: ${rhythm(0.5)} 20px;
 `;
 
+const metaCss = css`
+  padding-bottom: ${rhythm(1)};
+`;
+
 export default function BlogPost({ data }) {
   const post = data.markdownRemark;
   console.log(data);
@@ -22,7 +26,7 @@ export default function BlogPost({ data }) {
     <Layout>
       <div css={containerCss}>
         <main css={mainCss}>
-          <p>
+          <div css={metaCss}>
             <small>
               <a
                 href="/blog"
@@ -31,10 +35,16 @@ export default function BlogPost({ data }) {
                 <b>Stian </b> / {post.frontmatter.date}{" "}
               </a>
             </small>
-          </p>
+          </div>
           <h1>{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          <p style={{ color: "#888" }}>Written {post.frontmatter.date}.</p>
+          {post.frontmatter.modified && (
+            <small>
+              <p style={{ color: "#888" }}>
+                Last modified {post.frontmatter.modified}.
+              </p>
+            </small>
+          )}
         </main>
       </div>
     </Layout>
@@ -48,6 +58,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "DD. MM. YYYY")
+        modified(formatString: "DD. MM. YYYY")
       }
     }
   }
