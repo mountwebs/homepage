@@ -3,7 +3,7 @@ layout: post
 title: Downloading and making an archive searchable with python - Part 1
 date: "2021-02-16"
 slug: "blog/archive-part-1"
-modified: "2020-12-28"
+modified: "2021-02-21"
 ---
 
 A good friend of mine is doing academic research and told me about her frustration with the archive where most of the materials for her research is found. The material consists of PDFs of scanned letters and other texts. However, the material is not made searchable. Each entry does have a short description, but my friend would like to be able to find all entries where a single word is mentioned, and looking through the whole archive every time is a very time consuming task, to say the least.
