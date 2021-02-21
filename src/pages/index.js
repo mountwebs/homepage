@@ -27,9 +27,9 @@ const Home = () => {
     <Layout>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Stians portfolio and blog</title>
+        <title>Stian's portfolio and blog</title>
         <link rel="canonical" href="https://stiangk.netlify.app/" />
-        <meta property="og:title" content="Stian Klasbus portfolio and blog" />
+        <meta property="og:title" content="Stian Klasbu's portfolio and blog" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://stiangk.netlify.app/" />
         <meta
