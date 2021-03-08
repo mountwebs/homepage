@@ -44,7 +44,7 @@ const Nav = () => {
       <div css={iconContainerCss}>
         <a
           href="https://www.linkedin.com/in/stian-klasbu-917a40162/"
-          style={{ color: "inherit", display: "flex", alignItems: "flex-end" }}
+          style={{ color: "black", display: "flex", alignItems: "flex-end" }}
         >
           <AiOutlineLinkedin style={{ height: 24, width: 24 }} />
         </a>
@@ -52,7 +52,7 @@ const Nav = () => {
         <a
           href="https://github.com/mountwebs"
           style={{
-            color: "inherit",
+            color: "black",
             display: "flex",
             alignItems: "flex-end",
           }}
