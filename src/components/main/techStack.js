@@ -12,6 +12,7 @@ import {
 } from "react-icons/fa";
 import { IoLogoJavascript, IoLogoCss3 } from "react-icons/io5";
 import { AiFillHtml5 } from "react-icons/ai";
+import {DiDotnet} from "react-icons/di";
 import {
   SiRedux,
   SiWebpack,
@@ -34,6 +35,7 @@ import {
   SiNetlify,
   SiAdobephotoshop,
   SiFigma,
+  SiCsharp
 } from "react-icons/si";
 
 import { css } from "@emotion/react";
@@ -45,6 +47,7 @@ export default function Chips() {
       chips: [
         { label: "JavaScript", icon: <IoLogoJavascript /> },
         { label: "Python", icon: <FaPython /> },
+        { label: "C#", icon: <SiCsharp /> },
       ],
     },
     {
@@ -62,9 +65,10 @@ export default function Chips() {
     {
       type: "Back-end",
       chips: [
-        { label: "REST API" },
         { label: "Node", icon: <FaNodeJs /> },
+        { label: ".net", icon: <DiDotnet /> },
         { label: "Express" },
+        { label: "REST API" },
         { label: "MongoDB", icon: <SiMongodb /> },
         { label: "PostgreSQL", icon: <SiPostgresql /> },
         { label: "InfluxDB", icon: <SiInfluxdb /> },
