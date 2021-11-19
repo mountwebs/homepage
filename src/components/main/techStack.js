@@ -12,7 +12,7 @@ import {
 } from "react-icons/fa";
 import { IoLogoJavascript, IoLogoCss3 } from "react-icons/io5";
 import { AiFillHtml5 } from "react-icons/ai";
-import {DiDotnet} from "react-icons/di";
+import { DiDotnet } from "react-icons/di";
 import {
   SiRedux,
   SiWebpack,
@@ -35,7 +35,8 @@ import {
   SiNetlify,
   SiAdobephotoshop,
   SiFigma,
-  SiCsharp
+  SiCsharp,
+  SiMicrosoftazure,
 } from "react-icons/si";
 
 import { css } from "@emotion/react";
@@ -85,10 +86,11 @@ export default function Chips() {
       ],
     },
     {
-      type: "Deployment",
+      type: "Deploy/CI/CD",
       chips: [
-        { label: "Heroku", icon: <SiHeroku /> },
+        { label: "Azure DevOps", icon: <SiMicrosoftazure /> },
         { label: "Amazon AWS", icon: <SiAmazonaws /> },
+        { label: "Heroku", icon: <SiHeroku /> },
         { label: "Netlify", icon: <SiNetlify /> },
       ],
     },

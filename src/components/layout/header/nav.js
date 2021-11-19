@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { VscGithub } from "react-icons/vsc";
+import CVPdf from "../../../assets/pdf/CV.pdf";
 
 const containerCss = css`
   display: flex;
@@ -40,6 +41,9 @@ const Nav = () => {
         <Link css={linkCss} to={`/blog/`} activeStyle={{ color: "red" }}>
           blog
         </Link>
+        <a href={CVPdf} css={linkCss}>
+          CV
+        </a>
       </div>
       <div css={iconContainerCss}>
         <a

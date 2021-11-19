@@ -12,6 +12,7 @@ import DrawingMachine from "./projects/drawingMachine";
 import MasterThesis from "./projects/masterThesis";
 import Timeglass from "./projects/timeglass";
 import TikArticle from "./projects/tikArticle";
+import Iver from "./projects/iver";
 
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
@@ -45,6 +46,7 @@ const Projects = () => {
       <VerticalTimeline animate={true}>
         {filterState.dev && (
           <>
+            <Iver />
             <HomePage /> <PhysIO />
             <Blomstre />
             <SpaGallery />
