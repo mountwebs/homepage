@@ -15,30 +15,30 @@ const AboutMe = () => {
       <Title marginBottom={1}>About me</Title>
       <p>
         I am a full-stack web developer based in Oslo, with a passion for
-        creating and writing about technology.
+        automation and for creating functional and user friendly technical
+        solutions.
       </p>
       <p>
-        Last year I finished my master thesis in Science and technology studies.
-        Coding and tech-tinkering has always been some of my main interests and
-        hobbies, and after thinking and writing about tech in more abstract
-        terms, I decided to take a big step and turn a passion into a new career
-        path and becoming a developer. Last summer I applied to the accelerated
-        career program at{" "}
+        After I finished my master thesis in Science and Technology studies in
+        the spring of 2021, I descided to take a big step and turn my passion
+        for programming and technology into a new career path and becoming a
+        developer. I applied to the accelerated career program at{" "}
         <a href="https://salt.dev/">
           School of applied technology {"<"}/salt{">"}
         </a>
-        . And I got in! In December I completed the program together with 30
-        students, selected from 1500 applicants.
+        in Stockholm. I completed the program together with 30 students,
+        selected from 1500 applicants.
       </p>
       <p>
-        In my spare time I love to create things - whether that is to create an
-        IoT solution for my smart home, create music with some friends, create
-        generative drawings with code, or create apps.
+        This year I have been working as a technical consultant at Eye-share, a
+        Norwegian software company developing intelligent software for
+        purchase-to-pay solutions for over 45 countries. I am currently working
+        with customers to tailor the code to their spesific needs.
       </p>
       <p>
-        On this page you will find my projects and tech stack. Also take a look
-        at my <a href="/blog/">blog</a> where I plan to write more about my
-        current projects and thoughts on tehcnology.
+        In my spare time I love to create things - whether that is to create a
+        arduino-project with 3d printed parts that can automate some aspect of
+        my life, create a web app for fun, or make music with some friends.
       </p>
     </article>
   );
